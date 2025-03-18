@@ -39,7 +39,7 @@ num.Inspect();
 str.Inspect();
 str.Inspect("title");   // ※引数でタイトルを設定できる
 ```
-![alt text](SharpLab_inspect_01.png)
+![alt text](SharpLab_Inspect_01.png)
 
 [リンク](https://sharplab.io/#v2:EYLgHgbALANALiATgVwHYB8CWq4AJXIC2uAvLgKwDcAsAFAACAjAAy4DOcipuARABIBTADZCA9jxq06BQgDoAkqjYAHAQGM4ACgCUkjogVLVGnXs6GV6rTziY4QgT11A)
 
