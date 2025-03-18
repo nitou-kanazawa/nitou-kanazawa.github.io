@@ -21,5 +21,3 @@ d
 
 ## 参考資料
 - [Guru: Decorator](https://refactoring.guru/ja/design-patterns/chain-of-responsibility)
-- []()
-- []()
