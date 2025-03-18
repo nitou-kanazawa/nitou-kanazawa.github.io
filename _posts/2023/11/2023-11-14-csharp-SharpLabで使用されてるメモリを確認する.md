@@ -8,6 +8,7 @@ tags:
   - C#
   - .NET
   - IL
+media_subpath: /assets/img/SharpLab/
 ---
 
 ## 概要
