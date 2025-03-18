@@ -1,12 +1,12 @@
 ---
 title: ジェネリックの共変性と反変性
-category: C#
+categories: [C#]
 tags:
   - C#
   - Generic
 ---
 
-<!-- more -->
+## 概要
 
 
 ## 参考資料

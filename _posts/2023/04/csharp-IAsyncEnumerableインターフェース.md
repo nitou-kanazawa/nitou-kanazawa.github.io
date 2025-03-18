@@ -1,10 +1,11 @@
 ---
 title: IAsyncEnumerable<T>インターフェース
-category: C#
+categories: [C#]
 tags:
   - C#
 ---
 
+## 概要
 
-
-<!-- more -->
+## 参考資料
+- []()

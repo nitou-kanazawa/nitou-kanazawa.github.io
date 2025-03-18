@@ -3,8 +3,7 @@ title: ImmutableList<T>
 description: >-
   `ImmutableList<T>`は名前の通り，**変更できないリスト**．
   使用するにはNuGetパッケージ`System.Collection.Immutable`を導入する必要がある．
-categories: 
-  - C#
+categories: [C#]
 tags:
   - C#
 ---

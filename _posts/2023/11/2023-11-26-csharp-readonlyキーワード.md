@@ -1,0 +1,142 @@
+---
+title: readonlyキーワード
+categories: [C#]
+tags:
+  - C#
+---
+
+## 概要
+
+[`readonly`][readonly]は読み取り専用（不変）フィールドの宣言などで使用するキーワード．書き換え不要なオブジェクトを積極的にimmutableにすることはプログラムの堅牢性を高めるため，多くの場面で用いられる．
+
+一方，特定の状況では不変性を担保するために**意図しないコピー**が発生するなど，詳しい部分を把握できていなかったため，ここにメモを残す．
+
+
+## readonly キーワード
+
+`readonly`キーワードはどは，以下のコンテキストで使用できる．
+
+1. readonly フィールドの宣言 (値型，参照型)
+2. readonly struct 型の定義
+3. struct 内での readonly メンバ関数の宣言
+4. ref readonly メソッドの戻り値
+
+
+## 1. readonly フィールドの宣言
+
+フィールドを宣言する際に`readonly`をつけると読み取り専用にすることができます．
+
+```cs
+
+struct MyStruct {
+    public int value;
+}
+
+struct MyClass {
+    public int value;
+}
+
+class Foo {
+    // 読み取り専用フィールド
+    public readonly int num;
+    public readonly MyStruct myStruct = new();
+    public readonly MyClass myClass = new();
+}
+```
+
+読み取り専用フィールドは宣言時，もしくはコンストラクタ内でのみ値を割り当てることができる．
+
+> [!NOTE]
+> `readonly`と`const`はどちらも定数の定義に使われるキーワードであるが，両者は明確に異なる．`const`フィールドはコンパイル時定数であるのに対して，`readonly`フィールドは実行時定数として使用できる．
+
+また，読み取り専用フィールドは値型と参照型で挙動が異なる．
+
+  - 参照型はオブジェクトへの参照は不変だが，そのオブジェクト自体は変更できる．
+  - 値型は内部に値を持つため，再帰的に`readonly`が適用される．
+
+```cs
+var foo = new Foo();
+
+Console.WriteLine($"struct: {foo.myStruct.value}");   // struct 0
+Console.WriteLine($"class: {foo.myClass.value}");     // class 0
+
+// readonlyフィールド自体の変更はできない
+// foo.myClass = new MyClass();        // error CS0191: A readonly field cannot be assigned to...
+// foo.myStruct = new MyStruct();      // error CS0191: A readonly field cannot be assigned to...
+
+// foo.myStruct.value = 99;            // error CS1648: Members of readonly field 'Foo.myStruct' cannot be modified...
+foo.myClass.value = 99;
+
+Console.WriteLine($"class: {foo.myClass.value}");     // class 99
+```
+
+
+#### 防衛的コピー
+
+
+## 2. readonly struct 定義
+
+`C#7.2`以降では，構造体自体に`readonly`修飾をつけられるようになった．`readonly`をつけた構造体は以下の状態になる．
+
+- 全てのフィールドに対して`readonly`をつけなけらばならない．
+- `this`参照も`readonly`状態になる．
+
+```cs
+public readonly struct Coords {
+    public double X { get; init; }
+    public double Y { get; init; }
+
+    public Coords(double x, double y) {
+        X = x;
+        Y = y;
+    }
+
+    public override string ToString() => $"({X}, {Y})";
+}
+```
+
+>  [NOTE]
+> readonly 構造体でも，変更可能な参照型のデータメンバーはそれ自身の状態を変更できる．例えば，List<T>インスタンスを置き換えることはできないが，新しい要素をそれに追加することは可能．
+
+
+`readonly struct`とすることで構造体自体が不変であることが保証され，前述の**防衛的コピーの発生をさけることができる**．よって書き換えを意図していない構造体に対しては`readonly`修飾をつけるのが無難．
+
+
+## 3. readonly メンバ関数の宣言
+
+`C#8.0`では，メンバ関数に単位で「フィールドを書き換えない」ことを保証できるようになった．構造体全体を`readonly struct`にしなくても，防衛的コピーの問題をさけることができる．
+
+```cs
+struct Point {
+    public readonly int X;
+    public readonly int Y;
+
+    public Point(int x, int y) => (X, Y) = (x, y);
+
+    // フィールドを書き換えないメソッド
+    public readonly int Sum() => X + Y;
+}
+```
+
+
+## 4. ref readonly
+
+`in`キーワードと合わせて`C#7.2`で，参照戻り値と参照ローカル変数でも「参照渡しだけど読み取り専用」という渡し方ができるようになった．
+
+```cs
+private static readonly SamplePoint s_origin = new SamplePoint(0, 0, 0);
+public static ref readonly SamplePoint Origin => ref s_origin;
+```
+
+返される型を`readonly struct`にする必要はない．`ref`で返すことができる任意の型を，`ref readonly`で返すことができる．
+
+
+## 参考資料
+- [MS: readonly](https://learn.microsoft.com/ja-jp/dotnet/csharp/language-reference/keywords/readonly#ref-readonly-return-example)
+- [MS: 構造体](https://learn.microsoft.com/ja-jp/dotnet/csharp/language-reference/builtin-types/struct#readonly-instance-members)
+- [未確認飛行C: readonly の注意点](https://ufcpp.net/study/csharp/resource/readonlyness/#struct-readonly)
+- [qiita: C# Structパフォーマンス向上Tips](https://qiita.com/old_friend/items/1c9a0e47066c1ad0c987)
+
+
+<!-- リンク -->
+[readonly]: https://learn.microsoft.com/ja-jp/dotnet/csharp/language-reference/keywords/readonly

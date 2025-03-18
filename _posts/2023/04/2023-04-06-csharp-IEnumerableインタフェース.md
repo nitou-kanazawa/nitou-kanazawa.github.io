@@ -3,8 +3,7 @@ title: IEnumerableインタフェース
 description: >-
   `IEnumerable`は**コレクションに対する単純な反復処理をサポートする反復子を提供する**インタフェース．
   利用側は反復子である`IEnumrator`を介することで，コレクションの実装を知らずとも各要素への反復処理を行える．
-categories: 
-  - C#
+categories: [C#]
 tags:
   - C#
   - LINQ
