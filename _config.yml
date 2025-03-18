@@ -14,7 +14,7 @@ timezone:
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Chirpy # the main title
+title: Nitouの備忘録 # the main title
 
 tagline: A text-focused Jekyll theme # it will display as the subtitle
 
@@ -27,7 +27,6 @@ url: ""
 
 github:
   username: nitou-kanazawa # change to your GitHub username
-
 twitter:
   username: nitou33 # change to your Twitter username
 
