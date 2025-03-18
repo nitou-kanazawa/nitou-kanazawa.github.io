@@ -8,7 +8,7 @@ tags:
   - C#
   - .NET
   - IL
-media_subpath: _site/assets/img/SharpLab/
+media_subpath: assets/img/SharpLab/
 ---
 
 ## 概要
@@ -60,7 +60,7 @@ struct Point{
     public Point(int x, int y) => (this.x,this.y) = (x,y);
 }
 ```
-![alt text](SharpLab_Stack_01.png)
+<!-- ![alt text](SharpLab_Stack_01.png) -->
 
 [リンク](https://sharplab.io/#v2:C4LgTgrgdgPgbgQzAAihAtsgvMgjAOgCYAzAbgFgAoRFABwHsBLKYbVAUwHdkAFJlgBQBmADQB2AJSlkVKgEkoAZ1rsAxsHwBlYAlUBrAWnRT5Sleq079Ahs2AnKVRcEjre/YAG8qyX8gACQsh2yAAeFJR+AUEhAJ4RUYHudgIhoSLBLMixEtgAfMgCwAAWjIr46SVl+DlsAuk5EQC+QA===)
 
@@ -80,7 +80,7 @@ class Point{
 }
 ```
 
-![alt text](SharpLab_Heap_01.png)
+<!-- ![alt text](SharpLab_Heap_01.png) -->
 
 [リンク](https://sharplab.io/#v2:C4LgTgrgdgPgbgQzAAgA4HsCWVjILzJQCmA7sgApY4AUAzADQDsAlANzICwAUNwJJQBnVEQDGwAHQBlYAhEBrahmzA2fQcLHiAEkQSpFVFa27cAAgCYKhgN7dk95KdrJlyAB7GuDx89cBPT28nK2VqVzd6FxxkP2Z8AD5kamAAC0wBcQjU9PFY/CSI2M8AX24gA=)
 
@@ -97,7 +97,7 @@ Inspect.MemoryGraph(a);
 int[] b = new[]{1, 2, 3};
 Inspect.MemoryGraph(b);
 ```
-![alt text](SharpLab_MemoryGraph_01.png)
+<!-- ![alt text](SharpLab_MemoryGraph_01.png) -->
 
 [リンク](https://sharplab.io/#v2:C4LgTgrgdgPgllYACAhkgvEgzAbgLABQAAgEwCsKAlPgYQsANoC6SARhklAKYDuzA3gEYANEhKisAXxqkyrakA==)
 
