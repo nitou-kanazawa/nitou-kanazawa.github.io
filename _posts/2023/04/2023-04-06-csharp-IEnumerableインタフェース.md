@@ -1,8 +1,8 @@
 ---
 title: IEnumerableインタフェース
 description: >-
-  Get started with Chirpy basics in this comprehensive overview.
-  `IEnumerable`は**コレクションに対する単純な反復処理をサポートする反復子を提供する**インタフェース．利用側は反復子である`IEnumrator`を介することで，コレクションの実装を知らずとも各要素への反復処理を行える．
+  `IEnumerable`は**コレクションに対する単純な反復処理をサポートする反復子を提供する**インタフェース．
+  利用側は反復子である`IEnumrator`を介することで，コレクションの実装を知らずとも各要素への反復処理を行える．
 categories: 
   - C#
 tags:
@@ -151,7 +151,7 @@ System.Collections.Generic.IEnumerable .r.> System.Collections.Generic.IEnumerat
 
 ```cs
 foreach(var item in collection){
-    任意の処理
+    // 任意の処理
 }
 ```
 
@@ -161,11 +161,11 @@ try {
   IEnumerator e = collection.GetEnumerator();
   while(e.MoveNext()){
     var item = e.Current;
-    任意の処理
+    // 任意の処理
   }
 }
 finally{
-  Dispose処理
+  // Dispose処理
 }
 ```
 

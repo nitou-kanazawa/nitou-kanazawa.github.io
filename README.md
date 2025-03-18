@@ -1,7 +1,9 @@
 
 [サイトリンク](https://nitou-kanazawa.github.io/)
 
-記事の投稿: https://chirpy.cotes.page/posts/write-a-new-post/
+記事の投稿: 
+  - https://chirpy.cotes.page/posts/write-a-new-post/
+  - https://chirpy.cotes.page/posts/text-and-typography/
 
 # Chirpy Starter
 
