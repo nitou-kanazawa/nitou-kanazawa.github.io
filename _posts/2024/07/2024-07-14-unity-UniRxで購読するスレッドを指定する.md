@@ -6,30 +6,28 @@ tags:
   - UniRx
   - 非同期
   - スレッド
+image:
+  path: /assets/thumbnails/logo_unity.png
 ---
 
 Unity API はメインスレッド上でしか呼び出せないという制限がある．（UnityAPI がスレッドセーフな実装ではないため）また，Subscribe に渡した関数は基本的に IObserver.OnNext を実行したスレッド上で実行される．
 
-<!-- more -->
-
 
 ## UniRx で指定できるスケジューラー
 
-| **スケジューラー名**              | **説明**                                                                                             |
-| --------------------------------- | ---------------------------------------------------------------------------------------------------- |
-| `Scheduler.CurrentThread`         | 現在のスレッドで処理を行う．同期的に実行されるため，再帰的な処理がある場合は注意が必要．             |
-| `Scheduler.Immediate`             | スケジューリングせず，すぐに実行する．スレッドの切り替えが不要で，低オーバーヘッド．                 |
-| `Scheduler.MainThread`            | Unity のメインスレッドで処理を実行．Unity のオブジェクトや UI の操作を行う際に使用．                 |
-| `Scheduler.MainThreadEndOfFrame`  | Unity のフレーム終了時に処理を実行する．描画後の処理を行いたい場合に有効．                           |
-| `Scheduler.ThreadPool`            | スレッドプールで非同期的に実行．並列処理に適しているが，Unity のメインスレッドに依存する操作は不可． |
-| `Scheduler.MainThreadFixedUpdate` | Unity の`FixedUpdate`で処理を実行．物理演算や一定間隔の処理に利用．                                  |
-| `Scheduler.MainThreadUpdate`      | Unity の`Update`メソッド内で実行する．フレームごとに処理を行いたい場合に使用．                       |
+| **スケジューラー名**              | **説明**                                                                                                 |
+| --------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| `Scheduler.CurrentThread`         | 現在のスレッドで処理を行う．<br>同期的に実行されるため，再帰的な処理がある場合は注意が必要．             |
+| `Scheduler.Immediate`             | スケジューリングせず，すぐに実行する．<br>スレッドの切り替えが不要で，低オーバーヘッド．                 |
+| `Scheduler.MainThread`            | Unity のメインスレッドで処理を実行．<br>Unity のオブジェクトや UI の操作を行う際に使用．                 |
+| `Scheduler.MainThreadEndOfFrame`  | Unity のフレーム終了時に処理を実行する．<br>描画後の処理を行いたい場合に有効．                           |
+| `Scheduler.ThreadPool`            | スレッドプールで非同期的に実行．<br>並列処理に適しているが，Unity のメインスレッドに依存する操作は不可． |
+| `Scheduler.MainThreadFixedUpdate` | Unity の`FixedUpdate`で処理を実行．<br>物理演算や一定間隔の処理に利用．                                  |
+| `Scheduler.MainThreadUpdate`      | Unity の`Update`メソッド内で実行する．<br>フレームごとに処理を行いたい場合に使用．                       |
 
 #### Immediate と CurrentThread の違い
 
 `Scheduler.Immediate`と`Scheduler.CurrentThread`はどちらも「現在実行中のスレッド」上で処理を行う Sheduler．違いは処理の実行要求があった時にそれを「直ちに処理を実行する」か「一度キューに詰めてから実行する」か．
-
-<details><summary>Immediate使用時の注意</summary>
 
 余談だが`Repet`オペレータで Immediate を再講読すると無限ループになるらしい．
 
@@ -41,7 +39,6 @@ Observable.Return(1,Scheduler.Immediate).Repeat().Take(1).Subscribe();
 Observable.Return(1,Scheduler.CurrentThread).Repeat().Take(1).Subscribe();
 ```
 
-</details>
 
 ## ObserveOn
 
