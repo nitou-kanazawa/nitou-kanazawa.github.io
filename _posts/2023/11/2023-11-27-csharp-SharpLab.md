@@ -7,8 +7,6 @@ tags:
   - IL
 ---
 
-## 概要
-
 [SharpLab][SharpLab]は.NETのWeb Playground．コンパイル結果や IL（Intermediate Language）、JIT の最適化後のアセンブリコードを確認できる．
 
 [リポジトリ](https://github.com/ashmind/SharpLab)
