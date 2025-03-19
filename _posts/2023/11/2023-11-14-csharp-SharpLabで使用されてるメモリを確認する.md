@@ -2,7 +2,6 @@
 title: SharpLabで使用されてるメモリを確認する
 description: >-
   SharpLabはWeb上でC#の実行や使用メモリの確認などが行えるサイト．
-  このサイトを利用して
 categories: [C#]
 tags:
   - C#
@@ -13,7 +12,7 @@ media_subpath: /assets/img/SharpLab/
 
 ## 概要
 
-C#の参考書や記事を読んでいるとスタックやヒープにメモリを確保するという話がよく出てくるが，なかなか具体的なイメージを持つことができない．そこで[SharpLab][SharpLab]
+C#の参考書や記事を読んでいるとスタックやヒープにメモリを確保するという話がよく出てくるが，なかなか具体的なイメージを持つことができない．そこで[SharpLab][SharpLab]を利用して，組み込み型や独自型のデータがどのようにメモリ上に確保されているか視覚的に確認する．
 
 
 ## SharpLabの機能
@@ -107,6 +106,7 @@ Inspect.MemoryGraph(b);
 
 
 **値型**
+
 | キーワード | 型名             | メモリ使用量 | 値の範囲（min ～ max                                    | 備考                               |
 | ---------- | ---------------- | ------------ | ------------------------------------------------------- | ---------------------------------- |
 | `byte`     | `System.Byte`    | 1 byte       | 0 ～ 255                                                | 符号なし 8 ビット整数              |
@@ -124,6 +124,7 @@ Inspect.MemoryGraph(b);
 | `bool`     | `System.Boolean` | 1 byte       | `true` または `false`                                   | メモリ使用量は最適化される場合あり |
 
 **参照型**
+
 | キーワード | 型名            | メモリ使用量 | 値の範囲（min ～ max | 備考                   |
 | ---------- | --------------- | ------------ | -------------------- | ---------------------- |
 | `object`   | `System.Object` | 参照型       | -                    | すべての型の基底クラス |
@@ -147,6 +148,5 @@ Inspect.MemoryGraph(b);
 [SharpLab]: https://sharplab.io/
 [Inspectクラス]: https://github.com/ashmind/SharpLab/blob/main/source/Runtime/Inspect.cs
 [SharpLabObjectExtensionsクラス]: https://github.com/ashmind/SharpLab/blob/main/source/Runtime/SharpLabObjectExtensions.cs
-
 
 [組み込み型]: https://learn.microsoft.com/ja-jp/dotnet/csharp/language-reference/builtin-types/built-in-types
