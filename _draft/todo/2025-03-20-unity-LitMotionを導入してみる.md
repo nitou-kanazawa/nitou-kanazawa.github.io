@@ -102,9 +102,14 @@ https://github.com/annulusgames/LitMotion.git?path=src/LitMotion/Assets/LitMotio
 - Annulus Games: [【Unity】LitMotion – データ指向設計による最速のトゥイーン実装](https://annulusgames.com/blog/lit-motion/)
 - zenn: [LitMotion Guidebook](https://github.com/nitou-kanazawa/demo-unity-LitMotion.git)
 
+
+
 <!-- リンク | リポジトリ -->
 [LitMotion リポジトリ]: https://github.com/nuskey8/LitMotion
 [UGUIAnimationSamples]: https://github.com/nuskey8/UGUIAnimationSamples
+
+<!-- リンク | Unity Discussions -->
+[LitMotion UnityDiscussion]: https://discussions.unity.com/t/litmotion-lightning-fast-and-zero-allocation-tween-library/936361/11
 
 <!-- リンク | Assest Store -->
 
