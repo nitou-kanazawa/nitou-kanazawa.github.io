@@ -1,5 +1,5 @@
 ---
-title: IEnumerableインタフェース
+title: IEnumerableとIEnumerator
 description: >-
   IEnumerableはコレクションに対する単純な反復処理をサポートする反復子を提供するインタフェース．
   利用側は反復子であるIEnumratorを介することで，コレクションの実装を知らずとも各要素への反復処理を行える．
@@ -8,7 +8,6 @@ tags:
   - C#
   - LINQ
 ---
-
 
 ## 概要
 
@@ -79,37 +78,60 @@ for(Node n=list.head; n!=null; n=n.next) {
 そこで，コレクションへの共通のアクセス方法を提供するのが`IEnumerable`インターフェースである．
 
 
+
 ## インターフェース定義
 
-C#の標準コレクションは非ジェネリック版とジェネリック版で，`System.Collections`名前空間と`System.Collections.Generic`名前空間に分かれている．
+- IEnumerator: 反復処理の機能を提供
+- IEnumerable: 列挙可能であることを示す
 
-#### IEnumrator<T>
+C#の標準コレクションは非ジェネリック版とジェネリック版で，`System.Collections`名前空間と`System.Collections.Generic`名前空間に分かれている．（以下のコードでは名前空間は省略している）
+
+
+#### IEnumrator
 
 ```cs
-public interface IEnumerator<out T> : System.Collections.IEnumrator {
-    T Current { get; }
+public interface IEnumerator {
+    object Current { get; }
     bool MoveNext();
     void Reset();
 }
+
+public interface IEnumerator<out T> : IEnumrator {
+    T Current { get; }
+}
 ```
+
+- 列挙処理のためのインターフェース．
+- `MoveNext`で次の要素へ進め，`Current`で値を取得する．
+- `MoveNext`がfalseを返したら終了．
 
 #### IEnumerable<T>
 
 ```cs
-public interface IEnumerable<out T> : System.Collections.IEnumerable {
+public interface IEnumerable {
+    IEnumerator GetEnumerator();
+}
+
+public interface IEnumerable<out T> : IEnumerable {
     IEnumerator<T> GetEnumerator();
 }
 ```
 
-互換性を維持するために`IEnumerable<T>`は`IEnumerable`を実装するが，現在のC#で非ジェネリックのコレクションを使用することはほぼない．
+- 列挙処理用の列挙子（IEnumerator）を公開するインターフェース．
+- 全てのコレクションはこのインターフェースを実装する．
+- `foreach文`を使用できる．
+- `LINQ`を使用できる．
 
-#### 
+
+#### クラス図
+
+これらのインターフェースの相関は以下の通り．
 
 ```puml
 @startuml
 
 ' 非ジェネリック 
-package "System.Collections" {
+namespace System.Collections {
   interface IEnumerator{
     + object Current
     + bool MoveNext()
@@ -121,7 +143,7 @@ package "System.Collections" {
 }
 
 ' ジェネリック 
-package "System.Collections.Generic" {
+namespace System.Collections.Generic {
   interface IEnumerator<T>{
     + T Current
     + bool MoveNext()
@@ -143,8 +165,15 @@ System.Collections.Generic.IEnumerable .r.> System.Collections.Generic.IEnumerat
 @enduml
 ```
 
+非ジェネリック版は互換性を維持するために残されているに過ぎず，現在のC#で非ジェネリックのコレクションを使用することはほぼない．
 
-#### foreach文
+
+## IEnumerableに関連する構文
+
+- foreach: IEnumerableを**簡単に利用できる**ようにする．
+- イテレータ構文: IEnumerableを**簡単に実装できる**ようにする．
+
+#### foreach
 
 `foreach文`を用いることで`IEnumerable`インタフェースを介した要素へのアクセスを簡単に行える．
 
@@ -171,8 +200,34 @@ finally{
 ※`foreach`は糖衣構文
 
 
-#### yield構文
+#### イテレータ構文
 
+イテレータ構文は`C#2.0`から追加された，`IEnumerable`を簡単に実現するための機能．利用するケースには以下がある
+
+- 1. `IEnumerable`を簡単に作る場合
+- 2. 自作コレクション内の`IEnumerator`を簡単に定義する場合
+
+`IEnumerable`を返すメソッドやプロパティ内で`yield return`，`yield break`を使用する．
+
+- `yield return`で要素を返す．
+- `yield break`で処理を中断する．
+
+
+```cs
+public IEnumerable<int> GetNumbers() {
+    yield return 1;
+    yield return 2;
+    yield return 3;
+    yield return 4;  
+}
+```
+
+
+
+## 参考資料
+- Annulus Games: [【C#】How LINQ works – foreachとLINQの仕組み](https://annulusgames.com/blog/how-linq-works/)
+- 未確認飛行C: [イテレーター](https://ufcpp.net/study/csharp/sp2_iterator.html)
+- 
 
 <!-- リンク -->
 [IEnumerable]:https://learn.microsoft.com/ja-jp/dotnet/api/system.collections.ienumerable?view=net-9.0
