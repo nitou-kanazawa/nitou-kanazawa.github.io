@@ -21,6 +21,27 @@
 
 - `IScheduler`の代わりに`TimeProvider`
 
+
+## R3 を導入する
+
+
+#### NuGetForUnity をインストールする
+
+``` 
+https://github.com/GlitchEnzo/NuGetForUnity.git?path=/src/NuGetForUnity
+```
+
+
+#### R3.Unity をインストールする
+
+```
+https://github.com/Cysharp/R3.git?path=src/R3.Unity/Assets/R3.Unity
+```
+
+
+
+
+
 ## 参考資料
 - neue cc: [R3 - C#用のReactive Extensionsの新しい現代的再実装](https://neue.cc/2024/02/27_R3.html)
 - _: [R3 — A New Modern Reimplementation of Reactive Extensions for C#](https://neuecc.medium.com/r3-a-new-modern-reimplementation-of-reactive-extensions-for-c-cf29abcc5826)
