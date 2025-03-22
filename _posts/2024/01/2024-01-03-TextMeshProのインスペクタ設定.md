@@ -4,6 +4,7 @@ categories: [ Unity ]
 tags:
   - Unity
   - TMPro
+mermaid: true
 ---
 
 `TextMeshProUGUI` のインスペクタ設定に関するメモ書き．
@@ -47,7 +48,8 @@ classDiagram
 - Extra Settings
 
 
-![]({{img_root}}/TextMeshPro_インスペクタ01.png)
+![](/assets/img/Unity/TextMeshPro/TextMeshPro_インスペクタ01.png)
+
 
 ## 参考資料
 
