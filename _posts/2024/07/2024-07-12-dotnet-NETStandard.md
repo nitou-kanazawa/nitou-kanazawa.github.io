@@ -1,5 +1,5 @@
 ﻿---
-title: .NET Standard"
+title: .NET Standard とは
 categories: [C#]
 tags:
   - C#

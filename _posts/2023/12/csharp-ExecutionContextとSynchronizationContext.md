@@ -21,7 +21,6 @@ tags:
 UniTaskは`SynchronizationContext`には依存せず，UnityのPlayerLoop上で動作している．
 
 
-
 ```cs
 // PlayerLoop.Updateで実行する(yield return nullに等しい)
 await UniTask.Yield();
@@ -39,3 +38,5 @@ await UniTask.Delay(TimeSpan.FromSeconds(1), delayTiming: PlayerLoopTiming.PreUp
 await UniTaskAsyncEnumerable.IntervalFrame(30, PlayerLoopTiming.Update).ForEachAsync(_ => { });
 ```
 
+
+## 参考資料
