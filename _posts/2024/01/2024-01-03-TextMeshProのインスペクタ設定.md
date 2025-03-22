@@ -48,7 +48,17 @@ classDiagram
 - Extra Settings
 
 
+## 1. Text Input
+
 ![](/assets/img/Unity/TextMeshPro/TextMeshPro_インスペクタ01.png)
+
+
+## 2. Main Settings
+![](/assets/img/Unity/TextMeshPro/TextMeshPro_インスペクタ02.png)
+
+
+## 3. Extra Settings
+![](/assets/img/Unity/TextMeshPro/TextMeshPro_インスペクタ03.png)
 
 
 ## 参考資料
