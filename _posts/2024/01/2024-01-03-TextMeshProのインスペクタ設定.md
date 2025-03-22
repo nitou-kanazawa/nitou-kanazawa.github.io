@@ -15,17 +15,12 @@ mermaid: true
 ```mermaid
 classDiagram
 
-  class TMP_Text {
-
-  }
-
   Graphic <|-- MaskableGraphic
   MaskableGraphic <|-- TMP_Text
   MaskableGraphic <|-- TMP_SubMeshUI
 
   TMP_Text <|-- TextMeshPro
   TMP_Text <|-- TextMeshProUGUI
-
 ```
 
 ## TextMeshProの設定値
