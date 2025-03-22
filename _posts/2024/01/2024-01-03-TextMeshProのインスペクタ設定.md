@@ -58,11 +58,9 @@ classDiagram
 
 ## 参考資料
 
+- hatena: [【Unity】TextMesh Proをアニメーションさせる～プログラマ編～](https://coposuke.hateblo.jp/entry/2020/06/07/020330)
+
 
 <!-- リンク |  -->
 [TextMeshPro マニュアル]: https://docs.unity3d.com/ja/Packages/com.unity.textmeshpro@3.0/manual/index.html
 [TextMeshPro スクリプトAPI]: https://docs.unity3d.com/ja/Packages/com.unity.textmeshpro@3.0/api/TMPro.html
-
-
-
-{% assign img_root = '/assets/img/Unity/TextMeshPro' %}

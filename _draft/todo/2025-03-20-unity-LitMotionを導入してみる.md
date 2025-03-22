@@ -101,7 +101,7 @@ https://github.com/annulusgames/LitMotion.git?path=src/LitMotion/Assets/LitMotio
 ## 参考資料
 - Annulus Games: [【Unity】LitMotion – データ指向設計による最速のトゥイーン実装](https://annulusgames.com/blog/lit-motion/)
 - zenn: [LitMotion Guidebook](https://github.com/nitou-kanazawa/demo-unity-LitMotion.git)
-
+- hatena: [LitMotion Animation を拡張する](https://yotiky.hatenablog.com/entry/litmotion_animationex)
 
 
 <!-- リンク | リポジトリ -->

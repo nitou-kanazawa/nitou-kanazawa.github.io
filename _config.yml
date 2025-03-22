@@ -15,8 +15,7 @@ timezone: Asia/Tokyo
 # ↓ --------------------------
 
 title: Nitouの備忘録 # the main title
-
-tagline: A text-focused Jekyll theme # it will display as the subtitle
+tagline: 学習中の技術に関するメモや記録． # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   学習中の技術に関するメモや記録を残していく場所．
