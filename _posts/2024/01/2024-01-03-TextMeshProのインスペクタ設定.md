@@ -28,18 +28,7 @@ classDiagram
 `TextMeshProUGUI`のインスペクタでは下記の項目を設定できる
 
 - **Text Input**
-- Main Settings
-  - Font Asset
-  - Material Preset
-  - Font Size
-  - Vertex Color
-  - Color Gradient
-  - Override Tags
-  - Spacing Options
-  - Alignment
-  - Text Wrapping Mode
-  - Horizontal Mapping
-  - Vertival Mapping
+- Main Settings  
 - Extra Settings
 
 
@@ -50,6 +39,18 @@ classDiagram
 
 ## 2. Main Settings
 ![](/assets/img/Unity/TextMeshPro/TextMeshPro_インスペクタ02.png)
+
+- Font Asset
+- Material Preset
+- Font Size
+- Vertex Color
+- Color Gradient
+- Override Tags
+- Spacing Options
+- Alignment
+- Text Wrapping Mode
+- Horizontal Mapping
+- Vertival Mapping
 
 
 ## 3. Extra Settings
