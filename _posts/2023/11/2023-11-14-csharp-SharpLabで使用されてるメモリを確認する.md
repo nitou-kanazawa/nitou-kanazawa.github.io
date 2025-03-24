@@ -139,9 +139,9 @@ Inspect.MemoryGraph(b);
 
 
 ## 参考資料
-- [_: Sharplab のMemoryGraph を使ってメモリの状態を確認する](https://tech.guitarrapc.com/entry/2019/02/14/055953)
-- [hatena: sharplab-inspect の使い方](https://shikaku-sh.hatenablog.com/entry/c-sharp-how-to-use-sharplab-inspect)
-- [_: SharpLabを使ったC#のメモリ管理の確認](https://soft-rime.com/post-9359/#google_vignette)
+- _: [Sharplab のMemoryGraph を使ってメモリの状態を確認する](https://tech.guitarrapc.com/entry/2019/02/14/055953)
+- hatena: [sharplab-inspect の使い方](https://shikaku-sh.hatenablog.com/entry/c-sharp-how-to-use-sharplab-inspect)
+- _: [SharpLabを使ったC#のメモリ管理の確認](https://soft-rime.com/post-9359/#google_vignette)
 - [未確認飛行C: 組込み型](https://ufcpp.net/study/csharp/st_embeddedtype.html)
 
 <!-- リンク -->

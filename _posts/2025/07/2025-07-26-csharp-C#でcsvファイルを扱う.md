@@ -1,0 +1,110 @@
+---
+title: C#でcsvファイルを扱う
+categories: [C#]
+tags:
+  - C#
+  - CSV
+---
+
+C#で使えるCSVライブラリについてのメモ書き．
+
+
+## CSV ライブラリ
+
+主要なライブラリを以下に示す．
+
+1. [CsvHelper][CsvHelper repository]
+2. [ServiceStack.Tex][ServiceStack.Tex repository]
+3. [Csv][Csv repository]
+
+
+## 1. CsvHelper
+
+おそらく最も有名なライブラリ．
+公開が2009年頃で現在も更新されているが，何度か破壊的なアップデートが入っているため，古い記事を読む際は注意が必要．
+
+#### 参考記事
+- _: [CsvHelper公式ドキュメント](https://joshclose.github.io/CsvHelper/)
+- zenn: [C# で動的に列が変わる CSV を生成したい](https://zenn.dev/microsoft/articles/generate-dynamic-columns-csv)
+- qiita: [C#でCSVを扱うときに便利なCSVHelperの使い方](https://qiita.com/miya416/items/9916460528e29c3a5ea8)
+
+
+## 2. ServiceStack.Tex
+
+#### 参考記事
+
+
+## 3. Csv
+コンパクトなCSVライブラリ．`CsvHelper`ほどの機能はないが，単にCSVの読み書きをする分には十分な機能を備えている．
+
+※セル内の改行には対応していない．
+
+#### 読み込み
+
+```
+# comments are ignored
+ID, 名前, 年齢, 部署, メールアドレス
+101, 田中 太郎, 35, 営業部, tanaka.taro@example.com
+102, 佐藤 花子, 28, 総務部, sato.hanako@example.com
+103, 鈴木 一郎, 40, 開発部, suzuki.ichiro@example.com
+```
+※読みやすいようにスペースを入れている
+
+```cs
+var csv = File.ReadAllText("sample.csv");
+foreach (ICsvLine line in CsvReader.ReadFromText(csv)) {
+    var id = int.TryParse(line["ID"], out int value) ? value : -1;
+    var byName = line["Column name"];
+}
+```
+
+`CsvReader`クラスの`Read()`メソッドを呼ぶことで，データを`IEnumerable<ICsvLine>`型としてパースできる．（非同期の場合は`IAsyncEnumerable<ICsvLine>`）
+
+**Readメソッド一覧**
+```cs
+public static class CsvReader {
+    // 読み込み（同期）
+    public static IEnumerable<ICsvLine> Read(TextReader reader, CsvOptions? options);
+    public static IEnumerable<ICsvLine> ReadFromStream(Stream stream, CsvOptions? options);
+    public static IEnumerable<ICsvLine> ReadFromText(string csv, CsvOptions? options);
+
+    // 読み込み（非同期）
+    public static IAsyncEnumerable<ICsvLine> ReadAsync(TextReader reader, CsvOptions? options);
+    public static IAsyncEnumerable<ICsvLine> ReadFromStreamAsync(Stream stream, CsvOptions? options);
+    public static IAsyncEnumerable<ICsvLine> ReadFromTextAsync(string csv, CsvOptions? options);
+}
+```
+
+#### 書き込み
+`CsvReader`クラスの`Write()`メソッドで書き込みができる．
+
+```cs
+var columnNames = new [] { "Id", "Name" };
+var rows = new [] {
+    new [] { "0", "John Doe" },
+    new [] { "1", "Jane Doe" }
+};
+var csv = CsvWriter.WriteToText(columnNames, rows, ',');
+File.WriteAllText("people.csv", csv);
+```
+
+```
+Id, Name
+0, John Doe
+1, Jane Doe
+```
+※読みやすいようにスペースを入れている
+
+
+
+#### 参考記事
+- qiita: [C#用ライブラリの「Csv」を使ってみる](https://qiita.com/tat_tt/items/8c4647e8ef49076232eb)
+
+
+
+<!-- リンク | ドキュメント-->
+
+<!--　リンク | リポジトリ -->
+[CsvHelper repository]: https://github.com/JoshClose/CsvHelper
+[ServiceStack.Tex repository]: https://github.com/ServiceStack/ServiceStack.Text
+[Csv repository]: https://github.com/stevehansen/csv

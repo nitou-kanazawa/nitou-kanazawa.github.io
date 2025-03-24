@@ -9,12 +9,12 @@ tags:
   - LINQ
 ---
 
-## 概要
 
 [`IEnumerable`][IEnumerable]は**コレクションに対する単純な反復処理をサポートする反復子を提供する**インタフェース．利用側は反復子である[`IEnumrator`][IEnumerator]を介することで，コレクションの実装を知らずとも各要素への反復処理を行える．
 
 それぞれ，非ジェネリック版とジェネリック版が提供されている．また，`IEnumerable`，`IEnumrator`はC#におけるGoFの`Iterator`パターンにあたる．
 
+ちなみに，[`Enumerable`は`イニューマラブル`][Enumarable 発音]，[`Enumerator`は`イニューマレイター`][Enumarator 発音]と発音するのが正しいようだ．
 
 ## コレクションへのアクセス
 
@@ -222,12 +222,25 @@ public IEnumerable<int> GetNumbers() {
 }
 ```
 
+## その他
+
+#### 遅延評価と即時評価
+
+`IEnumerable` は `foreach` での明示的なアクセスや `LINQ` メソッドでのデータ処理が行われるまで，実際の処理が実行されない **遅延評価** という特徴を持つ．これは、`IEnumerable` が **データソースに対してどのようにアクセスするか（クエリ）** を定義するものであり，`IEnumerable` を生成しただけでは処理が実行されないためである．
+
+#### IEnumerable と IObservable
+
+先述のように`IEnumerable`では，利用側が対象に対して能動的にアクセスしてデータを取得することになる．そのため，`IEnumerable`はデータを引っ張ってくる`Pull`型のインタフェースと呼ばれている．一方，イベントの購読に利用される`IObservable`は，購読される側がデータを購読者へ流していることから対照的に`Push`型と表現される．
+
+この`Pull`型，`Push`型の考え方は，非同期処理やイベント駆動型プログラミングを理解するうえでも重要な要素なので，しっかり押さえておきたい．
+
 
 
 ## 参考資料
 - Annulus Games: [【C#】How LINQ works – foreachとLINQの仕組み](https://annulusgames.com/blog/how-linq-works/)
 - 未確認飛行C: [イテレーター](https://ufcpp.net/study/csharp/sp2_iterator.html)
-- 
+
+
 
 <!-- リンク -->
 [IEnumerable]:https://learn.microsoft.com/ja-jp/dotnet/api/system.collections.ienumerable?view=net-9.0
@@ -236,6 +249,11 @@ public IEnumerable<int> GetNumbers() {
 [IEnumerable<T>]: https://learn.microsoft.com/ja-jp/dotnet/api/system.collections.generic.ienumerable-1?view=net-8.0
 [IEnumerator<T>]: https://learn.microsoft.com/ja-jp/dotnet/api/system.collections.generic.ienumerator-1?view=net-8.0
 
-
+<!-- リンク -->
 [System.Collections名前空間]: https://learn.microsoft.com/ja-jp/dotnet/api/system.collections?view=net-6.0
 [System.Collections.Generic名前空間]: https://learn.microsoft.com/ja-jp/dotnet/api/system.collections.generic?view=net-9.0
+
+
+<!-- リンク -->
+[Enumarable 発音]: https://eow.alc.co.jp/search?q=enumerable
+[Enumarator 発音]: https://eow.alc.co.jp/search?q=enumerator
