@@ -4,6 +4,8 @@ categories: [C#]
 tags:
   - C#
   - .NET
+image:
+  path: /assets/thumbnails/logo_unity.png
 ---
 
 ## 概要
