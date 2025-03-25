@@ -51,7 +51,7 @@ tags:
 
 以上のことから，ユーザログインのベストプラクティスは以下のワークフロー図の通りである．
 
-<img src="https://learn.microsoft.com/ja-jp/gaming/playfab/features/authentication/media/tutorials/playfab-anonymous-login-and-recoverable-login.png" width=600>
+<img src="https://learn.microsoft.com/ja-jp/gaming/playfab/features/authentication/media/tutorials/playfab-anonymous-login-and-recoverable-login.png" alt="" width=600>
 
 
 ## 参考資料

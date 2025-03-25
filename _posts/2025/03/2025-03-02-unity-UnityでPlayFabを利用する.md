@@ -8,9 +8,8 @@ tags:
 
 [`PlayFab`](https://azure.microsoft.com/ja-jp/products/playfab)は，ゲーム開発に特化された`BasS (Backend as a Service)`の1つ．
 
-<!-- more -->
 
-#### PlayFabの機能
+## PlayFabの機能
 
 `PlayFab`は様々な機能を備えており，ドキュメントには`Multiplayer Services`，`LiveOps Services`，`Data & Analytices`のカテゴリに分けて以下のように示されている．
 
@@ -93,7 +92,7 @@ SDKパッケージを[こちらのリンク](https://aka.ms/playfabunitysdkdownl
 
 アセットの`Title Id`にゲームマネージャーで作成したタイトルのIDを入力する．
 
-<img src="https://learn.microsoft.com/ja-jp/gaming/playfab/sdks/unity3d/media/playfab-shared-settings-title-id.png" width =500>
+<img src="https://learn.microsoft.com/ja-jp/gaming/playfab/sdks/unity3d/media/playfab-shared-settings-title-id.png" alt="" width=500>
 
 また，以下のようにスクリプトから設定することもできる．
 
