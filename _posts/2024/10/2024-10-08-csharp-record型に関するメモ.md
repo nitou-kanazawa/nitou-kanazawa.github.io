@@ -1,0 +1,47 @@
+﻿---
+title: record型に関するメモ
+categories: [C#]
+tags:
+  - C#
+---
+
+`レコード型(record)`は`C#9.0`から追加された immutable なデータを簡単に定義できるようにする型．
+（`C#10.0`では構造体版レコード型の`record struct`も追加された．）
+
+### 使用例
+
+```cs
+public record Person(string FirstName, string LastName);
+```
+
+```cs
+public record Person {
+    public string FirstName { get; init; }
+    public string LastName { get; init; }
+};
+```
+
+## レコード型の特徴
+
+####
+
+####
+
+#### with 式
+
+`record`キーワードを使って定義した型に対しては、 以下のようなものが自動生成される．
+
+- Equals や GetHashCode や == などの等値判定メソッド
+- IEquatable<T> インターフェイスの実装も含む
+- ToString メソッド
+- 後述する with 式で使うクローン メソッド
+- 後述する派生クラス判別のための EqualityContract プロパティ
+
+## Value Object としての利用
+
+##
+
+## 参考資料
+
+- [MS: レコード (C# リファレンス)](https://learn.microsoft.com/ja-jp/dotnet/csharp/language-reference/builtin-types/record)
+- [未確認飛行 C: レコード型](https://ufcpp.net/study/csharp/datatype/record/)
