@@ -1,8 +1,8 @@
 ---
-title: UnityでINIファイルを扱う
-category: Unity
+title: C#でINIファイルを扱う
+category: C#
 tags:
-  - Unity
+  - C#
   - INI
   - OSS
 ---
@@ -22,11 +22,14 @@ C#で使えるINIファイル用ライブラリを以下に示す．
 
 
 
-## 
+## まとめ
 
+最近のアプリ開発で`INI`ファイルを扱うことはほとんどないですが，レガシーなプロジェクトではまだまだ扱う機会があると思う．その時に，どういった選択肢があるかは把握しておきたい．
 
 
 ## 参考資料
-
+- PG日誌: [【C#】INIファイルを読み書きする(DllImportなし)](https://takap-tech.com/entry/2022/04/22/230043)
+- _: [Windows APIを使わずにiniファイルを読む方法](https://coneta.jp/article/95698e40-ab92-4a31-bb1d-6eb73955dbf9/)
+- ざこノート: [[C#] iniファイルを読み込む方法たち](https://note.dokeep.jp/post/csharp-inifile-read/)
 
 <!-- リンク | repository -->

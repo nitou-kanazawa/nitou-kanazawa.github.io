@@ -1,7 +1,8 @@
 ---
 title: SwiftでSMBファイル共有を行う
-category: Swift
+categories: [Swift]
 tags:
+  - Swift
   - SMB
 ---
 
