@@ -8,8 +8,6 @@ image:
   path: /assets/thumbnails/logo_unity.png
 ---
 
-## 概要
-
 `.NET`の実装は様々あって紛らわしいが，`.NET Standard`はそれらで共通する API を定めたただの仕様である．
 
 > .NET Standard は、複数の .NET 実装で使用できる .NET API の正式な仕様です．.NET Framework と他の .NET 実装 (.NET Core など) との間でコードを共有する場合は、ライブラリで .NET Standard 2.0 をターゲットとする必要があります。

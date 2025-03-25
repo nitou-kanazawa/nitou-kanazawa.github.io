@@ -1,13 +1,12 @@
 ---
 title: SwiftUIの基本知識
-category: Swift
+categories: [Swift]
 tags:
   - Swift
   - SwiftUI
-id: 5da6af1e7e25e8629d62
 ---
 
-## 概要
+`SwiftUI`に関するメモ書き．
 
 
 ## キーワード
