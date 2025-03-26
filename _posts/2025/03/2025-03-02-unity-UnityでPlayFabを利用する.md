@@ -84,7 +84,7 @@ Microsoftアカウントを使用してサインインする必要がある．
 
 SDKパッケージを[こちらのリンク](https://aka.ms/playfabunitysdkdownload)からダウンロードし，Unity内にインストールする．
 
-<img src="" alt="" width=300>
+<!-- <img src="" alt="" width=300> -->
 
 #### タイトル設定
 
