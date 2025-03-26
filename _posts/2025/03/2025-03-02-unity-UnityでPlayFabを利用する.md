@@ -84,7 +84,7 @@ Microsoftアカウントを使用してサインインする必要がある．
 
 SDKパッケージを[こちらのリンク](https://aka.ms/playfabunitysdkdownload)からダウンロードし，Unity内にインストールする．
 
-<img src="" width=300>
+<img src="" alt="" width=300>
 
 #### タイトル設定
 
@@ -153,3 +153,6 @@ Successのコールバックが実行されれば，PlayFabに正常にログイ
 - [MS: PlayFabとは？](https://learn.microsoft.com/ja-jp/gaming/playfab/what-is-playfab)
 - [MS: UnityのC#用のPlayFabクライアントライブラリ](https://learn.microsoft.com/ja-jp/gaming/playfab/sdks/unity3d/quickstart)
 - [zenn: ゲーム開発が10倍ラクになる「PlayFab」の始め方](https://zenn.dev/nekojoker/articles/38f1654ee254f482dfce)
+
+
+<!-- Link |  -->
