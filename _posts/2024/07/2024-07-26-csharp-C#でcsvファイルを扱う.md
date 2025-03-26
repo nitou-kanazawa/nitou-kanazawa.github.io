@@ -47,8 +47,9 @@ ID, 名前, 年齢, 部署, メールアドレス
 101, 田中 太郎, 35, 営業部, tanaka.taro@example.com
 102, 佐藤 花子, 28, 総務部, sato.hanako@example.com
 103, 鈴木 一郎, 40, 開発部, suzuki.ichiro@example.com
-```
+
 ※読みやすいようにスペースを入れている
+```
 
 ```cs
 var csv = File.ReadAllText("sample.csv");
@@ -92,8 +93,9 @@ File.WriteAllText("people.csv", csv);
 Id, Name
 0, John Doe
 1, Jane Doe
-```
+
 ※読みやすいようにスペースを入れている
+```
 
 
 
