@@ -11,14 +11,14 @@ C#で使えるCSVライブラリについてのメモ書き．
 
 ## CSV ライブラリ
 
-主要なライブラリを以下に示す．
+主要なライブラリには以下の３つがある．シンプルな読み書きのみの利用であれば，コンパクトな`Csv`．データマッピングなどの機能が必要であれば，高機能な`CsvHelper`を導入するのが良いかと思われる．
 
-1. [CsvHelper][CsvHelper repository]
-2. [ServiceStack.Tex][ServiceStack.Tex repository]
-3. [Csv][Csv repository]
+1. CsvHelper
+2. Csv
+3. ServiceStack.Tex
+---
 
-
-## 1. CsvHelper
+## 1. [CsvHelper][CsvHelper repository]
 
 おそらく最も有名なライブラリ．
 公開が2009年頃で現在も更新されているが，何度か破壊的なアップデートが入っているため，古い記事を読む際は注意が必要．
@@ -28,13 +28,9 @@ C#で使えるCSVライブラリについてのメモ書き．
 - zenn: [C# で動的に列が変わる CSV を生成したい](https://zenn.dev/microsoft/articles/generate-dynamic-columns-csv)
 - qiita: [C#でCSVを扱うときに便利なCSVHelperの使い方](https://qiita.com/miya416/items/9916460528e29c3a5ea8)
 
+---
 
-## 2. ServiceStack.Tex
-
-#### 参考記事
-
-
-## 3. Csv
+## 2. [Csv][Csv repository]
 コンパクトなCSVライブラリ．`CsvHelper`ほどの機能はないが，単にCSVの読み書きをする分には十分な機能を備えている．
 
 ※セル内の改行には対応していない．
@@ -97,7 +93,13 @@ Id, Name
 ※読みやすいようにスペースを入れている
 ```
 
+---
 
+## 3. [ServiceStack.Tex][ServiceStack.Tex repository]
+
+#### 参考記事
+
+---
 
 #### 参考記事
 - qiita: [C#用ライブラリの「Csv」を使ってみる](https://qiita.com/tat_tt/items/8c4647e8ef49076232eb)

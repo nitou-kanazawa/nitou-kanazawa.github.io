@@ -9,11 +9,11 @@ tags:
 
 `NUnit`はJavaの単体テストフレームワーク（`JUnit`）に触発されて開発された，.NET用の単体テストフレームワーク．元々は独立した開発者によって作成されていたが，現在は .NET Foundation によってサポートされている．
 
-## NUnit
+---
 
 ## テストに使用する属性
 
-`NUnit`ではテストコードに属性
+`NUnit`ではテストコードに属性を付与して
 
 ```cs
 public class FooTests {
@@ -42,12 +42,13 @@ public class FooTests {
 
 | 属性            | 説明                                             |
 | --------------- | ------------------------------------------------ |
-| SetUp           | [Test]属性ごとに直前に実行される                 |
-| TearDown        | [Test]属性ごとに直後に実行される                 |
-| OneTimeSetUp    | [TestFixture]属性ごとに1度だけ直前に実行される   |
-| OneTimeTearDown | [TestFixture]属性ごとに1度だけ直後に実行される   |
+| SetUp           | [Test] 属性ごとに直前に実行される                |
+| TearDown        | [Test] 属性ごとに直後に実行される                |
+| OneTimeSetUp    | [TestFixture] 属性ごとに1度だけ直前に実行される  |
+| OneTimeTearDown | [TestFixture] 属性ごとに1度だけ直後に実行される  |
 | TestCase        | 書いたTestCaseの数だけ変数値を指定してテストする |
 
+---
 
 ## アサーション
 
@@ -55,7 +56,7 @@ public class FooTests {
 
 
 
-#### Classic Meodel
+#### Classic Model
 
 `Assert.That()` 以外のメソッドでの評価を [**Classic Model**][ClassicModel] と呼ぶ．
 
@@ -103,7 +104,6 @@ Assert.That("Example", Does.EndWith("ple"));
 Assert.That("Example", Does.Match("Ex*"));
 ```
 
-
 #### Special Assertions
 
 **Special Assertions** には明示的にテスト結果を返すメソッドが分類される．検査ロジックを自前で用意する場合に使用する．他のアサーションと同様に引数にメッセージを渡すこともできる．
@@ -113,6 +113,7 @@ Assert.That("Example", Does.Match("Ex*"));
 - `Assert.Ignore()`: テストを無視する．
 - `Assert.Inconclusive()`: テストを保留する．
 
+---
 
 ## 参考資料
 - qiita: [[.NET][C#]NUnitを使用して単体テスト自動化　基本編](https://qiita.com/suganury/items/d255ae140373af7d0146)
