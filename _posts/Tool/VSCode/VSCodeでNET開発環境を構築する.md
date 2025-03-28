@@ -6,6 +6,8 @@ tags:
   - .NET
 ---
 
+`VS Code`で`.NET`開発環境を整える手順についてのメモ．
+
 
 ## .NET のインストール手順
 
@@ -28,7 +30,12 @@ dotnet --info
 ## 
 
 
-## 
+## プラグイン導入
+
+#### C# Dev Kit
+
+
+#### C# 
 
 
 
@@ -41,7 +48,7 @@ dotnet --info
 
 ## 参考記事
 - qiita: [Windows 11 の VSCode の .NET 8 開発環境の構築方法](https://qiita.com/mmake/items/6748ad531ca7bd44a8ce)
-
+- zenn: [VSCodeでC#開発をする方法](https://zenn.dev/midoliy/articles/9e3cff958ff89ba151de)
 
 
 
