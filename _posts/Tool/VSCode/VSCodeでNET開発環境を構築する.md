@@ -34,10 +34,14 @@ dotnet --info
 
 #### [C# Dev Kit][拡張機能 C# Dev Kit]
 
+<img src="https://ms-dotnettools.gallerycdn.vsassets.io/extensions/ms-dotnettools/csdevkit/1.17.64/1743017880322/Microsoft.VisualStudio.Services.Icons.Default" alt="C# DevKit icon" width=100>
+
 
 - [プロジェクト管理](https://code.visualstudio.com/docs/csharp/project-management) : 
 
 #### [C#][拡張機能 C#]
+
+<img src ="https://ms-dotnettools.gallerycdn.vsassets.io/extensions/ms-dotnettools/csharp/2.70.15/1742419226880/Microsoft.VisualStudio.Services.Icons.Default" alt="C# icon" width=100>
 
 `C# Dev Kit`をインストールすると，必須の依存関係として自動的にインストールされる．
 
@@ -48,6 +52,8 @@ dotnet --info
 
 
 #### [.NET Core Test Explorer][拡張機能 .NET Core Test Explorer]
+
+<img src="https://formulahendry.gallerycdn.vsassets.io/extensions/formulahendry/dotnet-test-explorer/0.7.8/1663946684868/Microsoft.VisualStudio.Services.Icons.Default" alt=".NET Core Test Explorer icon" width=100>
 
 Unitテスト用の拡張機能．設定からテスト対象プロジェクトのパスを指定する必要がある．
 
