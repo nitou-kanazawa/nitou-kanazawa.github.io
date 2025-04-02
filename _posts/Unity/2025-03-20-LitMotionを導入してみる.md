@@ -1,7 +1,5 @@
 ---
 title: LiMotionを導入してみる
-description: >-
-  SharpLabはWeb上でC#の実行や使用メモリの確認などが行えるサイト．
 categories: [Unity]
 tags:
   - Unity
@@ -11,22 +9,16 @@ image:
   path: /assets/thumbnails/logo_unity.png
 ---
 
-## 概要
-
-これまでTweenライブラリにはネット上の情報が多い`DoTween`を用いていたが，以下の点で多少不満を感じる部分があった．
-
-- アセットストアで配布されているため，他のUPMパッケージと比べて管理が少し面倒．
-- `TextMeshPro`関連の機能は，有料版の`DoTween Pro`の方でしか使えない．
-- DLL形式で配布されているので実装を確認できない．
-
-そこでデータ指向設計によるハイパフォーマンスなTweenライブラリの「**LitMotion**」を試してみた．他にも候補は幾つかあったが，上記の条件を満たしていること，`UniTask`/`R3`との連携が可能なことから，こちらのOSSを選定した．
+データ指向設計によるハイパフォーマンスなTweenライブラリの「**LitMotion**」を試してみた．
 
 
 ## LitMotion とは
 
 実装方針などが[作者のブログ][LitMotion 解説記事]で解説されている．他のTweenライブラリの実装におけるパフォーマンス面の問題を言及し，それに対してDOTSを活用した実装について順を追って解説されている．大変勉強になった．
-
 （DOTS関連は全く知識がないので，ここも年内には触ってみたい．）
+
+また，GitHub Pagesで[ドキュメント][LitMotion ドキュメント]も用意されているので，詳しい使用方法などはそちらで確認できる．
+
 
 #### 実装面に関して
 
@@ -115,3 +107,4 @@ https://github.com/annulusgames/LitMotion.git?path=src/LitMotion/Assets/LitMotio
 
 <!-- リンク | 記事 -->
 [LitMotion 解説記事]: https://annulusgames.com/blog/lit-motion/
+[LitMotion ドキュメント]: https://annulusgames.github.io/LitMotion/articles/ja/overview.html

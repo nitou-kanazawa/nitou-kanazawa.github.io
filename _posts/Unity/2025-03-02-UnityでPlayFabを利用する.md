@@ -4,6 +4,8 @@ categories: [Unity]
 tags:
   - Unity
   - PlayFab
+image:
+  path: /assets/thumbnails/logo_unity.png
 ---
 
 [`PlayFab`](https://azure.microsoft.com/ja-jp/products/playfab)は，ゲーム開発に特化された`BasS (Backend as a Service)`の1つ．
