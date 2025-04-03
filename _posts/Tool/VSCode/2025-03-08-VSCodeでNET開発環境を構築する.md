@@ -8,6 +8,7 @@ tags:
 
 `VS Code`で`.NET`開発環境を整える手順についてのメモ．
 
+--- 
 
 ## .NET のインストール手順
 
@@ -26,8 +27,40 @@ tags:
 dotnet --info
 ```
 
+---
 
-## 
+## コマンド
+
+#### ソリューションファイルの作成
+
+[dotnet sln](https://learn.microsoft.com/ja-jp/dotnet/core/tools/dotnet-sln)
+
+
+フォルダ名と同じ名前の.slnファイルを作成する
+
+```
+dotnet new sln  
+```
+
+`--name`オプションでファイル名を指定できる．
+
+```
+dotnet new sln --name {YourSolutionName}
+dotnet new sln -n {YourSolutionName}
+```
+
+`--output`でフォルダを作りその中に.slnファイルを作成するともできる．
+
+```
+dotnet new sln --output {MySolution}
+
+// 以下と同じ
+mkdir MySolution
+cd MySolution
+dotnet new sln
+```
+
+---
 
 
 ## プラグイン導入
@@ -63,11 +96,11 @@ Unitテスト用の拡張機能．設定からテスト対象プロジェクト�
 
 ![alt text](image.png)
 
+---
+
 ## ソリューションの作成
 
-```
-dotnet new console -n {YoutProjectName}
-```
+
 
 ```
 cd YourProjectName
