@@ -94,7 +94,7 @@ Unitテスト用の拡張機能．設定からテスト対象プロジェクト�
 **/*Tests.csproj
 ```
 
-![alt text](image.png)
+![alt text](assets/img/VSCode/image.png)
 
 ---
 
