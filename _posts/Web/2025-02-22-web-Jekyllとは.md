@@ -34,8 +34,8 @@ id: e3ae5516-8075-4dd0-b368-8819db6ff114
 Windowsに`Ruby`をインストールするため，[`RubyInstaller`](https://rubyinstaller.org/)を使用する．
 [RubyInstaller Downloads](https://rubyinstaller.org/downloads/)から`Ruby+Devkit`版をダウンロードして，インストール．
 
-<img src="{8E1E9F7C-9570-43CB-BC7A-0A306C6BDB81}.png" alt="" width="300">
-<img src="{8C855C44-9583-4961-AA4F-2C61A3338E70}.png" alt="" width="300">
+<img src="assets/img/Jekyll/RubyInstaller.png" alt="" width="300">
+<img src="assets/img/Jekyll/{8C855C44-9583-4961-AA4F-2C61A3338E70}.png" alt="" width="300">
 
 </details>
 
