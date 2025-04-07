@@ -251,4 +251,3 @@ extension SomeStructure: ProtocolB {
 
 - [Mixi: iOS研修](https://www.youtube.com/watch?v=-CIJkjv8yJA&t=4300s)
 - [](https://github.com/mixigroup/ios-swiftui-training/tree/main)
-- []()

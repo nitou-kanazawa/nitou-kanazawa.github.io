@@ -5,9 +5,10 @@ tags:
   - Jekyll
 ---
 
+
 `Jekyll`では、さまざまな変数を利用してコンテンツを動的に生成することができる．以下に、Jekyllで使用できる主要な変数をカテゴリ別にまとめる．
 
-<!-- more -->
+{% raw %}
 
 ## グローバル変数
 
@@ -80,6 +81,7 @@ tags:
 - `forloop.first`: 最初の要素かどうか（true/false）
 - `forloop.last`: 最後の要素かどうか（true/false）
 
+{% endraw %}
 
 ## 参考資料
 - [Jekyll: 公式ドキュメント](https://jekyllrb.com/docs/variables/)

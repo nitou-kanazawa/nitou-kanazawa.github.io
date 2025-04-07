@@ -27,6 +27,3 @@ assert
 ## 参考資料
 
 - [qiita: Swiftのpreconditionとassertの使い分け](https://qiita.com/koher/items/ca7f388ab2a4e6747339)
-- []()
-- []()
-
