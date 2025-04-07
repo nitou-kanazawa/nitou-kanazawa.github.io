@@ -43,6 +43,3 @@ Httpは定期的に改善が行われている．主な変遷は以下の通り�
 
 ## 参考資料
 - [wiki: Hypertext Transfer Protocol](https://ja.wikipedia.org/wiki/Hypertext_Transfer_Protocol)
-- []()
-- []()
-- []()

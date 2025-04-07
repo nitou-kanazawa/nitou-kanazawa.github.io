@@ -62,7 +62,3 @@ HttpOnly;
 
 ## 参考資料
 - [MDN: HTTP Cookie の使用](https://developer.mozilla.org/ja/docs/Web/HTTP/Cookies)
-- []()
-- []()
-- []()
-- []()

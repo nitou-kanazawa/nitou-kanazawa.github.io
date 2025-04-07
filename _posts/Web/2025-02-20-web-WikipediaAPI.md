@@ -31,6 +31,5 @@ https://tabiji.gallery/development/5547
 ## 参考
 
 - [ウィキペディアのREST APIを使う](https://tabiji.gallery/development/5547)
-- []()
-- []()
+
 
