@@ -72,5 +72,4 @@ XCodeがタグとして認識するコメント．
 
 - [_: Xcodeのちょっとしたテクニックや裏技、設定を33個紹介！](https://ios-docs.dev/xcode-technic/)
 - [_: コードコメントの書き方｜ショートカットの利用、Markを活用したコメントアウト](https://blog.code-candy.com/xcode_comment_improvement/)
-- []()
 

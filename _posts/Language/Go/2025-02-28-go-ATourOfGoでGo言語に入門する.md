@@ -6,7 +6,7 @@ tags:
 ---
 
 
-[A Tour of Go]()は
+[A Tour of Go]は
 
 <!-- more -->
 

@@ -7,10 +7,10 @@ tags:
 id: e3ae5516-8075-4dd0-b368-8819db6ff114
 ---
 
+{% raw %}
+
 `Jekyll(ジキル)`は`Ruby`で開発されている静的サイトジェネレータ．
 データベースを必要とせず、WordPressのようなコンテンツ管理システムを使用することなく、個人ブログ、ポートフォリオサイト、ドキュメントサイトなど、様々なタイプの静的サイトを構築することが可能．
-
-<!-- more -->
 
 `GitHub`の共同創業者であるTom Preston-Wernerによって開発されており，`GitHub Pages`のバックエンドエンジンにも使用されている．
 
@@ -162,9 +162,11 @@ jekyll new my-blog
 
 ---
 
+{% endraw %}
+
 ## 参考資料
 
-- [wiki: Jekyll](https://ja.wikipedia.org/wiki/Jekyll)
-- [_: Jekyllで静的サイトを構築する方法](https://kinsta.com/jp/blog/jekyll-static-site/)
-- [_: Jekyllとはなにか](https://www.codegrid.net/articles/jekyll-1/)
-- [_: URLs and links in Jekyll](https://mademistakes.com/mastering-jekyll/how-to-link/)
+- wiki: [Jekyll](https://ja.wikipedia.org/wiki/Jekyll)
+- _: [Jekyllで静的サイトを構築する方法](https://kinsta.com/jp/blog/jekyll-static-site/)
+- _: [Jekyllとはなにか](https://www.codegrid.net/articles/jekyll-1/)
+- _: [URLs and links in Jekyll](https://mademistakes.com/mastering-jekyll/how-to-link/)

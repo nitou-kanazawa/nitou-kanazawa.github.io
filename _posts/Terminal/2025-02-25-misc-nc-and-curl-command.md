@@ -58,7 +58,3 @@ nc [オプション] ホスト名 ポート番号
 
 - [qiita: curlコマンド完全ガイド](https://qiita.com/kojiro30/items/5ead563c44ad6086ad41)
 - [qiita: nc(netcat)コマンドの説明と使い方について](https://qiita.com/boccham/items/536bf9201eec81c617d5)
-- []()
-- []()
-- []()
-- []()
