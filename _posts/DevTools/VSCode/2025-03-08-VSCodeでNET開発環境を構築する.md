@@ -88,7 +88,7 @@ dotnet new sln
 
 <img src="https://formulahendry.gallerycdn.vsassets.io/extensions/formulahendry/dotnet-test-explorer/0.7.8/1663946684868/Microsoft.VisualStudio.Services.Icons.Default" alt=".NET Core Test Explorer icon" width=100>
 
-Unitテスト用の拡張機能．設定からテスト対象プロジェクトのパスを指定する必要がある．
+Unitテスト用の拡張機能．設定からテスト対象プロジェクトのパスを指定する必要がある．例えば`Test Project Path`に以下を設定する．
 
 ```
 **/*Tests.csproj
