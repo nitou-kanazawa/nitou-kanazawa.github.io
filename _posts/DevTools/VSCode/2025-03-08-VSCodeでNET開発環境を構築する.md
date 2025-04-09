@@ -65,23 +65,27 @@ dotnet new sln
 
 ## プラグイン導入
 
-#### [C# Dev Kit][拡張機能 C# Dev Kit]
-
-<img src="https://ms-dotnettools.gallerycdn.vsassets.io/extensions/ms-dotnettools/csdevkit/1.17.64/1743017880322/Microsoft.VisualStudio.Services.Icons.Default" alt="C# DevKit icon" width=100>
-
-
-- [プロジェクト管理](https://code.visualstudio.com/docs/csharp/project-management) : 
+---
 
 #### [C#][拡張機能 C#]
 
 <img src ="https://ms-dotnettools.gallerycdn.vsassets.io/extensions/ms-dotnettools/csharp/2.70.15/1742419226880/Microsoft.VisualStudio.Services.Icons.Default" alt="C# icon" width=100>
 
-`C# Dev Kit`をインストールすると，必須の依存関係として自動的にインストールされる．
 
 - [リファクタリング](https://code.visualstudio.com/docs/csharp/refactoring) : 
 - [ナビゲーション](https://code.visualstudio.com/docs/csharp/navigate-edit) :
 - インテリセンス:
 - フォーマット: 
+
+
+#### [C# Dev Kit][拡張機能 C# Dev Kit]
+
+`C# Dev Kit`をインストールすると，必須の依存関係として `C#` も自動的にインストールされる．
+
+<img src="https://ms-dotnettools.gallerycdn.vsassets.io/extensions/ms-dotnettools/csdevkit/1.17.64/1743017880322/Microsoft.VisualStudio.Services.Icons.Default" alt="C# DevKit icon" width=100>
+
+
+- [プロジェクト管理](https://code.visualstudio.com/docs/csharp/project-management) : 
 
 
 #### [.NET Core Test Explorer][拡張機能 .NET Core Test Explorer]
@@ -96,25 +100,15 @@ Unitテスト用の拡張機能．設定からテスト対象プロジェクト�
 
 ![alt text](assets/img/VSCode/image.png)
 
+
+#### C# XML Documentation Comments
+
 ---
 
-## ソリューションの作成
 
 
 
-```
-cd YourProjectName
-code .
-```
-
-以下のような構成でソリューションとプロジェクトが生成される
-```
-MySolution/
-├── MySolution.sln
-└── MyProject/
-```
-
-
+---
 
 
 ## 公式資料

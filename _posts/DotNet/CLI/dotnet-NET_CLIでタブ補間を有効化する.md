@@ -1,4 +1,10 @@
-
+---
+title: .NET CLI でタブ補間を有効化する
+categories: [ .NET ]
+tags:
+  - .NET
+  - CLI
+---
 
 
 [プロファイルを作成方法](https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_profiles?view=powershell-7.5#how-to-create-a-profile)
@@ -6,23 +12,23 @@
 
 1. PowerShell プロファイルの場所を確認する
 
-```
+```bash
 echo $PROFILE
 ```
 
 プロファイルが存在しない場合は作成する
 
-```
+```bash
 
 ```
 
 2. プロファイルを編集エディタで開く
 
-```
+```bash
 notepad $PROFILE
 ```
 
-```
+```bash
 # PowerShell parameter completion shim for the dotnet CLI
 Register-ArgumentCompleter -Native -CommandName dotnet -ScriptBlock {
     param($wordToComplete, $commandAst, $cursorPosition)
