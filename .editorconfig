@@ -1,5 +1,6 @@
 root = true
 
+# デフォルト設定
 [*]
 charset = utf-8
 indent_style = space
