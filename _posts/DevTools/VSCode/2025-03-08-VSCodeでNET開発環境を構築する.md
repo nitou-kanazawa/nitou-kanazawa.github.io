@@ -77,6 +77,7 @@ dotnet new sln
 - インテリセンス:
 - フォーマット: 
 
+---
 
 #### [C# Dev Kit][拡張機能 C# Dev Kit]
 
@@ -89,6 +90,7 @@ dotnet new sln
 
 ※Visual Studio と同様のライセンス体系
 
+---
 
 #### [IntelliCode for C# Dev Kit][拡張機能 IntelliCode for C# Dev Kit]
 
@@ -97,6 +99,8 @@ dotnet new sln
 <img src="https://ms-dotnettools.gallerycdn.vsassets.io/extensions/ms-dotnettools/vscodeintellicode-csharp/2.2.3/1731477548450/Microsoft.VisualStudio.Services.Icons.Default" alt=".NET Core Test Explorer icon" width=100>
 
 ※Visual Studio と同様のライセンス体系
+
+---
 
 #### [.NET Core Test Explorer][拡張機能 .NET Core Test Explorer]
 
