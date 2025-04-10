@@ -25,6 +25,9 @@ VSCodeを日本語化する拡張機能．
 <img src ="https://oderwat.gallerycdn.vsassets.io/extensions/oderwat/indent-rainbow/8.3.1/1649543509070/Microsoft.VisualStudio.Services.Icons.Default" alt="C# icon" width=100>
 
 
+#### [EditorConfig for VS Code]
+
+`.editorconfig`に沿ったコードフォーマットを自動適用する．
 
 
 #### [Todo Tree][拡張機能 Todo Tree] 

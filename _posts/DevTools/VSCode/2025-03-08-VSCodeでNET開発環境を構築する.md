@@ -87,12 +87,24 @@ dotnet new sln
 
 - [プロジェクト管理](https://code.visualstudio.com/docs/csharp/project-management) : 
 
+※Visual Studio と同様のライセンス体系
+
+
+#### [IntelliCode for C# Dev Kit][拡張機能 IntelliCode for C# Dev Kit]
+
+`C# Dev Kit` 用のAIコード補間機能．残念ながら現状は使い物にならないレベル（2025.04）．
+
+<img src="https://ms-dotnettools.gallerycdn.vsassets.io/extensions/ms-dotnettools/vscodeintellicode-csharp/2.2.3/1731477548450/Microsoft.VisualStudio.Services.Icons.Default" alt=".NET Core Test Explorer icon" width=100>
+
+※Visual Studio と同様のライセンス体系
 
 #### [.NET Core Test Explorer][拡張機能 .NET Core Test Explorer]
 
+Unitテスト用の拡張機能．
+
 <img src="https://formulahendry.gallerycdn.vsassets.io/extensions/formulahendry/dotnet-test-explorer/0.7.8/1663946684868/Microsoft.VisualStudio.Services.Icons.Default" alt=".NET Core Test Explorer icon" width=100>
 
-Unitテスト用の拡張機能．設定からテスト対象プロジェクトのパスを指定する必要がある．例えば`Test Project Path`に以下を設定する．
+設定からテスト対象プロジェクトのパスを指定する必要がある．例えば`Test Project Path`に以下を設定する．
 
 ```
 **/*Tests.csproj
@@ -102,6 +114,11 @@ Unitテスト用の拡張機能．設定からテスト対象プロジェクト�
 
 
 #### C# XML Documentation Comments
+
+
+
+
+
 
 ---
 
@@ -122,11 +139,14 @@ Unitテスト用の拡張機能．設定からテスト対象プロジェクト�
 - qiita: [VSCodeとdotnet-cliでC#のソースコードをテスト出来るようにするまで](https://qiita.com/jnuank/items/e9aeb2d8c99d1e6f1081)
 
 
+
+[^C# Dev Kit] : https://forest.watch.impress.co.jp/docs/news/1537627.html
+
 <!-- Link | VSCode拡張機能 -->
-[拡張機能 C# Dev Kit]: https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit
 [拡張機能 C#]: https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp
+[拡張機能 C# Dev Kit]: https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit
+[拡張機能 IntelliCode for C# Dev Kit]: https://marketplace.visualstudio.com/items/?itemName=ms-dotnettools.vscodeintellicode-csharp
 [拡張機能 .NET Core Test Explorer]: https://marketplace.visualstudio.com/items?itemName=formulahendry.dotnet-test-explorer
-[拡張機能]
 [拡張機能]
 [拡張機能]
 [拡張機能]
