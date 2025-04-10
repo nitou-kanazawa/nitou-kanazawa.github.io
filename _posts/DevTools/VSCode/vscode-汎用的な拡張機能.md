@@ -17,6 +17,7 @@ VSCodeを日本語化する拡張機能．
 
 インストール後に `Configure Display Language` で日本語を選択する．
 
+---
 
 #### [indent-rainbow][拡張機能 indent-rainbow]
 
@@ -24,14 +25,14 @@ VSCodeを日本語化する拡張機能．
 
 <img src ="https://oderwat.gallerycdn.vsassets.io/extensions/oderwat/indent-rainbow/8.3.1/1649543509070/Microsoft.VisualStudio.Services.Icons.Default" alt="C# icon" width=100>
 
-
+---
 
 
 #### [Todo Tree][拡張機能 Todo Tree] 
 
 <img src ="https://gruntfuggly.gallerycdn.vsassets.io/extensions/gruntfuggly/todo-tree/0.0.226/1681324794296/Microsoft.VisualStudio.Services.Icons.Default" alt="C# icon" width=100>
 
-
+---
 
 #### [Git Graph][拡張機能 Git Graph]
 
