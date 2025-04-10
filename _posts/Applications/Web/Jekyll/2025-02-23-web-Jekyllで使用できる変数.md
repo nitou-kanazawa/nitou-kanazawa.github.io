@@ -1,6 +1,6 @@
 ---
 title: Jekyllで使用できる変数
-category: Web
+categories: [ Web ]
 tags:
   - Jekyll
 ---

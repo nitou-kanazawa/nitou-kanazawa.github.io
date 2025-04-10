@@ -1,8 +1,9 @@
 ---
 title: SMBプロトコルとは
-category: Misc
+category: Networking
 tags:
   - SMB
+  - Protocol
 ---
 
 
@@ -12,7 +13,11 @@ tags:
 
 `SMB1`と`SMB2`には互換性がなく，パケット構造も全く異なる．
 
+---
 
+
+
+--- 
 
 ## 参考資料
 
