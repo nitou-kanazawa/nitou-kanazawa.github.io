@@ -117,6 +117,7 @@ dotnet_naming_rule.private_fields_should_be_camel_case.severity = suggestion
 
 [使用例](https://github-com.translate.goog/editorconfig/editorconfig/wiki/Projects-Using-EditorConfig?_x_tr_sl=auto&_x_tr_tl=ja&_x_tr_hl=ja)
 
+---
 
 #### 参考資料
 - 公式サイト [EditorConfig](https://editorconfig.org/)
@@ -124,7 +125,6 @@ dotnet_naming_rule.private_fields_should_be_camel_case.severity = suggestion
 - zenn: [今さら聞けないEditorConfig](https://zenn.dev/sashimi/articles/7f2c6f29e8a065)
 - qiita: [EditorConfig公式サイトの解説を日本語に訳しました](https://qiita.com/yama-github/items/f4af3b3a0c00306bbb17)
 
----
 
 
 <!-- Link -->
