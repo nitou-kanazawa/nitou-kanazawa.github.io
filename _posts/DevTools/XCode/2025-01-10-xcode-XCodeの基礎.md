@@ -1,9 +1,8 @@
 ﻿---
-title: XCodeの基礎  
-category: XCode
+title: XCodeの基礎
+categories: [ Tool, VSCode ]
 tags:
   - XCode
-id: 9f835213-a007-4729-b204-3465f7f79cf8
 ---
 
 ## 概要

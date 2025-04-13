@@ -1,9 +1,9 @@
 ﻿---
 title: XCodeの基本知識
-category: XCode
+categories: [ Tool, XCode ]
 tags:
   - XCode
-id: 3b1f586d-f813-4f8e-aa89-242467580d95
+  - ショートカット
 ---
 
 XCodeを使用する上での基本知識やTipsをメモしておく．
