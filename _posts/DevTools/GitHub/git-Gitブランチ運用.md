@@ -8,7 +8,7 @@ tags:
 mermaid: true
 ---
 
-Gitでブランチを切って開発をするにあたって，`git flow` という考え方があるらしい．あと`git flow` を簡略化？した `github flow` についても調べてみる．
+Gitでブランチを切って開発をするにあたって，`git flow`，`github flow` という考え方があるらしい．
 
 
 > ![](https://nvie.com/img/git-model@2x.png)
