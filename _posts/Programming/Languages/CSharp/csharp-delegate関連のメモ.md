@@ -57,7 +57,6 @@ public delegate int PerformCalculation(int x, int y);
 
 
 ---
-
 ## 参考資料
 - 未確認飛行C: [デリゲート](https://ufcpp.net/study/csharp/sp_delegate.html)
 - 未確認飛行C: [ラムダ式](https://ufcpp.net/study/csharp/sp3_lambda.html)

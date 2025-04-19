@@ -1,6 +1,6 @@
 ---
 title: UnityでNuGetパッケージを扱う
-categories: [Unity]
+categories: [ Unity ]
 tags:
   - Unity
   - NuGet
