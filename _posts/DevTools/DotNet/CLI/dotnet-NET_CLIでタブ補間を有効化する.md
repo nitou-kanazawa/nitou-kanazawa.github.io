@@ -7,6 +7,9 @@ tags:
 ---
 
 
+
+
+
 [プロファイルを作成方法](https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_profiles?view=powershell-7.5#how-to-create-a-profile)
 [プロファイルと実行ポリシー](https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_profiles?view=powershell-7.5#profiles-and-execution-policy)
 
