@@ -1,6 +1,6 @@
 ---
 title: UniRx Observeble.FromEvent
-category: Unity
+categories: [Unity]
 tags:
   - Unity
   - UniRx

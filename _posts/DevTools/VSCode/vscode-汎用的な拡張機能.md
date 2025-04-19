@@ -25,15 +25,37 @@ VSCodeを日本語化する拡張機能．
 
 <img src ="https://oderwat.gallerycdn.vsassets.io/extensions/oderwat/indent-rainbow/8.3.1/1649543509070/Microsoft.VisualStudio.Services.Icons.Default" alt="C# icon" width=100>
 
+###### 参考記事
+
+
 ---
 
 #### [EditorConfig for VS Code][拡張機能 EditorConfig for VS Code]
 
-`.editorconfig`に沿ったコードフォーマットを自動適用する．
+`.editorconfig`に沿ったコードフォーマットを自動適用する．また，コンテキストメニューにファイル生成コマンドも追加する．
+
+<img src ="https://editorconfig.gallerycdn.vsassets.io/extensions/editorconfig/editorconfig/0.17.2/1741633538135/Microsoft.VisualStudio.Services.Icons.Default" alt="C# icon" width=100>
+
+###### 参考記事
+
+
 
 ---
+#### [Code Spell Checker][拡張機能 Code Spell Checker]
 
+タイポを指摘してくれる拡張機能．
+
+<img src ="https://streetsidesoftware.gallerycdn.vsassets.io/extensions/streetsidesoftware/code-spell-checker/4.0.45/1744011817953/Microsoft.VisualStudio.Services.Icons.Default" alt="C# icon" width=100>
+
+###### 参考記事
+- qiita: [VSCode に Code Spell Checker を導入して typo と戦ってきた](https://qiita.com/diescake/items/50ebe23c592dd9738012)
+- だえうホームページ: [【VSCode】Code Spell Checkerでスペルミスを防ぐ](https://daeudaeu.com/vscode-code-spell-checker/)
+
+
+---
 #### [Todo Tree][拡張機能 Todo Tree] 
+
+`TODO` `FIXME` などのアノテーションコメントを管理できる．使用するキーはカスタム可能．
 
 <img src ="https://gruntfuggly.gallerycdn.vsassets.io/extensions/gruntfuggly/todo-tree/0.0.226/1681324794296/Microsoft.VisualStudio.Services.Icons.Default" alt="C# icon" width=100>
 
@@ -42,6 +64,10 @@ VSCodeを日本語化する拡張機能．
 #### [Git Graph][拡張機能 Git Graph]
 
 <img src ="https://mhutchie.gallerycdn.vsassets.io/extensions/mhutchie/git-graph/1.30.0/1617594001998/Microsoft.VisualStudio.Services.Icons.Default" alt="C# icon" width=100>
+
+
+###### 参考記事
+
 
 ---
 
@@ -59,6 +85,6 @@ VSCodeを日本語化する拡張機能．
 [拡張機能 Todo Tree]: https://marketplace.visualstudio.com/items/?itemName=Gruntfuggly.todo-tree
 [拡張機能 Git Graph]: https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph
 [拡張機能 EditorConfig for VS Code]: https://marketplace.visualstudio.com/items/?itemName=EditorConfig.EditorConfig
-[拡張機能]
+[拡張機能 Code Spell Checker]: https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker
 [拡張機能]
 [拡張機能]
