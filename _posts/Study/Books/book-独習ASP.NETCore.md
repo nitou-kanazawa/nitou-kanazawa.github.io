@@ -14,7 +14,7 @@ mermaid: true
 ## 1. イントロダクション
 
 - [x] ASP.NET Coreの全体像
-- [ ] ASP.NET Core利用のための環境設定
+- [x] ASP.NET Core利用のための環境設定
 
 #### ASP.NET Core とは
 
@@ -114,7 +114,7 @@ block-beta
 ---
 ## 2. ASP.NET Core MVC の基本
 
-- [ ] コントローラの基本
+- [x] コントローラの基本
 - [ ] ビューの基本
 - [ ] モデルの基本 
 
@@ -137,8 +137,12 @@ dotnet watch
 - クラスに `Controller` 属性が適用されている．
 
 
-`IActionResult` を返す `System.AspNet.Mvc.Controller`クラスのヘルパーメソッド．
+コントローラにはクライアントからのリクエストを処理するための**アクションメソッド**を定義する．アクションメソッドは以下の特徴がある．
+  - アクセス修飾子はpublicにする．
+  - 返り値は`IActionResult` を返す． 
 
+
+基本的に`System.AspNet.Mvc.Controller`クラスのヘルパーメソッドを利用する．
 | メソッド | 概要                                 |
 | -------- | ------------------------------------ |
 | Content  | 指定のテキストを出力                 |
@@ -148,7 +152,78 @@ dotnet watch
 | NotFound | 404 NotFound ステータスを生成        |
 
 
+###### ルーティング
 
+`program.cs` で最低限の設定を行える．以下のコードでは，`default`という名前で `{controller}/{action}/{id}`のURLパターンを登録している．
+
+```cs
+var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddControllersWithViews();
+var app = builder.Build();
+  
+  :
+
+// ルーティング
+app.MapControllerRoute(
+  name: "default",
+  pattern: "{controller=Home}/{action=Index}/{id?}");
+```
+
+- パラメータの名前・数は自由
+- 既定値と省略可能なパラメータ
+
+
+#### ビュー
+
+`Razor` はHTMLにC#コードを埋め込むための仕組み（ビューエンジン）．`Razor Pages`や`Blazor`デモ共通して利用される仕組みであり，以下の特徴を持つ
+
+```cs
+
+```
+
+- C#の標準的な構文で，条件分岐・ループなどを表現できる．
+- ビュー共通の機能，テンプレートを再利用するための仕組みを備える．
+- タグヘルパー（ビュー生成のための仕組み）を利用することで，フォーム・リンクなどをよりシンプルに開発できる．
+
+
+
+###### Razorテンプレート
+
+Razorを利用する場合のコントローラアクションとRazorテンプレートの役割
+  - アクション側 : 表示に必要な値を**ビュー変数**に設定する．
+  - テンプレート側 : データを埋め込む場所や表示方法などを指定する． 
+
+```cs
+public class HelloController : Controller{
+  
+  public IActionResult Show(){
+    ViewBag.Message = "こんにちは，世界！";   // (1) ビュー変数の準備
+    return View();                            // (2) Razorテンプレートの呼び出し
+  } 
+}
+```
+
+`ViewBag`はdynamic型で定義されており，**ビュー変数**は`ViewBag`のプロパティとして設定できる．また，ディクショナリの`ViewData`で設定することも可能．
+
+```cs
+ViewBag.変数名 = 値;
+```
+```cs
+ViewData["変数名"] = 値;    // こちらは文字キーなので，変数名に"-"を含めることもできる
+```
+
+
+テンプレート側では以下のようにビュー変数を参照する． 値の取得には`@...`，処理の実行には `@{}` を使用する． 
+
+```cshtml
+@{
+    ViewData["Title"] = "Show";
+}
+<p>@ViewBag.Message</p>     @* ビュー変数を表示 *@
+```
+
+
+#### モデル
 
 
 
