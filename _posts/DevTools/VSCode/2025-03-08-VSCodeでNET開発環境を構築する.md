@@ -66,7 +66,6 @@ dotnet new sln
 ## プラグイン導入
 
 ---
-
 #### [C#][拡張機能 C#]
 
 <img src ="https://ms-dotnettools.gallerycdn.vsassets.io/extensions/ms-dotnettools/csharp/2.70.15/1742419226880/Microsoft.VisualStudio.Services.Icons.Default" alt="C# icon" width=100>
@@ -77,8 +76,8 @@ dotnet new sln
 - インテリセンス:
 - フォーマット: 
 
----
 
+---
 #### [C# Dev Kit][拡張機能 C# Dev Kit]
 
 `C# Dev Kit`をインストールすると，必須の依存関係として `C#` も自動的にインストールされる．
@@ -90,18 +89,18 @@ dotnet new sln
 
 ※Visual Studio と同様のライセンス体系
 
----
 
+---
 #### [IntelliCode for C# Dev Kit][拡張機能 IntelliCode for C# Dev Kit]
 
 `C# Dev Kit` 用のAIコード補間機能．残念ながら現状は使い物にならないレベル（2025.04）．
 
-<img src="https://ms-dotnettools.gallerycdn.vsassets.io/extensions/ms-dotnettools/vscodeintellicode-csharp/2.2.3/1731477548450/Microsoft.VisualStudio.Services.Icons.Default" alt=".NET Core Test Explorer icon" width=100>
+<img src="https://ms-dotnettools.gallerycdn.vsassets.io/extensions/ms-dotnettools/vscodeintellicode-csharp/2.2.3/1731477548450/Microsoft.VisualStudio.Services.Icons.Default" alt="IntelliCode for C# Dev Kit icon" width=100>
 
 ※Visual Studio と同様のライセンス体系
 
----
 
+---
 #### [.NET Core Test Explorer][拡張機能 .NET Core Test Explorer]
 
 Unitテスト用の拡張機能．
@@ -117,6 +116,20 @@ Unitテスト用の拡張機能．
 ![alt text](assets/img/VSCode/image.png)
 
 
+--- 
+#### [ASP.NET Core Snippets]
+
+<img src="https://rahulsahay.gallerycdn.vsassets.io/extensions/rahulsahay/csharp-aspnetcore/1.11.0/1559414167977/Microsoft.VisualStudio.Services.Icons.Default" alt=".NET Core Test Explorer icon" width=100>
+
+
+---
+#### [ASP.NET Core Switcher]
+
+
+<img src="https://adrianwilczynski.gallerycdn.vsassets.io/extensions/adrianwilczynski/asp-net-core-switcher/2.0.2/1577043327534/Microsoft.VisualStudio.Services.Icons.Default" alt="ASP.NET Core Switcher icon" width=100>
+
+
+--- 
 #### C# XML Documentation Comments
 
 

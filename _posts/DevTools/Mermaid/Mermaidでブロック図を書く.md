@@ -11,6 +11,13 @@ mermaid: true
 
 ## 基本
 
+できること
+- **列幅**を指定する
+- スペースを挟む
+
+できないこと
+- **行幅**を指定する
+
 ---
 #### シンプルなブロック図
 
@@ -85,13 +92,35 @@ block-beta
   e ["etc."]
 ```
 
+---
 ```mermaid
-block-beta
-  r ["ルーティング"]
-  m ["モデルバインド"]
-  t ["テンプレート<br>エンジン"]
-  f ["フィルター"]
-  e ["etc."]
+block-beta  
+  columns 6 
+  
+  %% Sub Framwork
+  block: framwork :3
+    columns 3
+    MVC ["ASP.NET<br>Core<br>MVC"]
+    RazorPages ["ASP.NET<br>Core<br>Razor Pages"]
+    Blazor
+  end
+  
+  block: service :3
+    WebAPI
+    SignalR
+    gRPC 
+  end
+  
+  %% Common 
+  block: lib :6
+    columns 5
+    r ["ルーティング"]
+    m ["モデルバインド"]
+    t ["テンプレート<br>エンジン"]
+    f ["フィルター"]
+    e ["etc."]
+  end
+  
 ```
 
 

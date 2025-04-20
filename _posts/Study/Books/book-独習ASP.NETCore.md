@@ -78,9 +78,34 @@ block-beta
 ###### .NET ASP Core の全体像
 
 ```mermaid
-block-beta
+block-beta  
+  columns 6 
+    
+  %% Sub Framwork
+  block: framwork ["Framwork (UI)"] :3
+    columns 3
+    MVC ["ASP.NET<br>Core<br>MVC"]
+    RazorPages ["ASP.NET<br>Core<br>Razor Pages"]
+    Blazor
+  end
+  
+  block: service ["Framwork (Service)"] :3
+    WebAPI
+    SignalR
+    gRPC 
+  end
+  
+  %% Common 
+  block: lib :6
+    columns 5
+    r ["ルーティング"]
+    m ["モデルバインド"]
+    t ["テンプレート<br>エンジン"]
+    f ["フィルター"]
+    e ["etc."]
+  end
+  
 ```
-
 
 
 
@@ -92,6 +117,41 @@ block-beta
 - [ ] コントローラの基本
 - [ ] ビューの基本
 - [ ] モデルの基本 
+
+
+
+#### アプリの実行
+
+プロジェクトディレクトリで以下のコマンドを実行すると，アプリを起動することができる．
+停止する際は `Ctrl` + `C` でシャットダウンする．
+
+```bash
+dotnet watch
+```
+
+#### コントローラ
+
+コントローラクラスは以下をいずれかを満たす必要がある．
+- `System.AspNet.Mvc.Controller` クラスする．
+- クラス名の接尾辞として「Contoller」が付く
+- クラスに `Controller` 属性が適用されている．
+
+
+`IActionResult` を返す `System.AspNet.Mvc.Controller`クラスのヘルパーメソッド．
+
+| メソッド | 概要                                 |
+| -------- | ------------------------------------ |
+| Content  | 指定のテキストを出力                 |
+| View     | テンプレートによる結果を出力         |
+| File     | 指定のバイト配列をファイルとして出力 |
+| Redirect | 指定アドレスにリダイレクト           |
+| NotFound | 404 NotFound ステータスを生成        |
+
+
+
+
+
+
 
 ---
 ## 3. Scaffolding機能
@@ -139,6 +199,28 @@ block-beta
 - [ ] Razor Pages
 - [ ] ASP.NET Core Web API
 - [ ] SPAプロジェクト
+
+
+
+
+---
+
+## その他
+
+#### VSCode
+
+VSCodeの拡張機能 `ASP.NET Core Snippets` を導入していれば，`mvc-...`でスニペットを利用できる．
+
+主なスニペット
+| キーワード             | 概要                                 |
+| ---------------------- | ------------------------------------ |
+| HomeController         | コントローラクラス                   |
+| mvc-core-xxxxx         | CRUDアクション (get,post,put,delete) |
+| mvc-core-async-action  | 非同期アクション                     |
+| mvc-core-xxxx-async    | CRUDアクション (非同期)              |
+| app-map                | ルーティング                         |
+| dbContext-UseSqlServer | SQL Server利用の宣言                 |
+| appsettings            | アプリ設定                           |
 
 
 
