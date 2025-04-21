@@ -1,6 +1,6 @@
 ---
 title: SMBプロトコルとは
-category: Networking
+categories: [ Networking ]
 tags:
   - SMB
   - Protocol
@@ -18,7 +18,6 @@ tags:
 
 
 --- 
-
 ## 参考資料
 
 
