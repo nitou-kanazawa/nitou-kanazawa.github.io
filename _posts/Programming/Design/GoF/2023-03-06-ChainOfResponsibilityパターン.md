@@ -63,11 +63,11 @@ Client -l-> IHandler
 
 ## まとめ
 
-
+---
 ## 参考資料
-- [Guru: Chain of Responsibility](https://refactoring.guru/ja/design-patterns/chain-of-responsibility)
-- [wiki: Chain of Responsibility パターン](https://ja.wikipedia.org/wiki/Chain_of_Responsibility_%E3%83%91%E3%82%BF%E3%83%BC%E3%83%B3)
-- [_: Jave Chain of Responsibilityパターン](https://programming-tips.jp/archives/a3/64/index.html)
+- Guru: [Chain of Responsibility](https://refactoring.guru/ja/design-patterns/chain-of-responsibility)
+- wiki: [Chain of Responsibility パターン](https://ja.wikipedia.org/wiki/Chain_of_Responsibility_%E3%83%91%E3%82%BF%E3%83%BC%E3%83%B3)
+- _: [Jave Chain of Responsibilityパターン](https://programming-tips.jp/archives/a3/64/index.html)
 
 
 
