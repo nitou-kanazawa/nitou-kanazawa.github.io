@@ -351,10 +351,21 @@ public async Task<IActionResult> Edit(int? id) {
 - [ ] Razorの基本構文
 
 
+#### Razor式
+
+`@...`や`@(...)`
+
+```razor
+<p>@Model.Isbn</p>
+```
+
+
+###### Razorテンプレートで利用できる制御構文
+
 | 分類   | 命令                   | 概要                       |
 | ------ | ---------------------- | -------------------------- |
-| 分岐   | @if / else if / else   | キストを出力               |
-|        | @switch                | キストを出力               |
+| 分岐   | @if / else if / else   | 条件式に従って処理を分岐   |
+|        | @switch                | 式の値によってcase句で分岐 |
 | ループ | @for                   | 指定された回数だけ繰り返し |
 |        | @foreach               | リストの内容を繰り返し     |
 |        | @while                 | 条件式がtrueの間，繰り返し |
@@ -362,6 +373,25 @@ public async Task<IActionResult> Edit(int? id) {
 | その他 | @using                 | オブジェクトの自動破棄     |
 |        | @try...catch...finally | 例外処理                   |
 |        | @lock                  | 処理のロック               |
+
+
+###### 主なディレクティブ
+
+| 分類         | ディレクティブ   | 概要                                       |
+| ------------ | ---------------- | ------------------------------------------ |
+| 基本         | @model           | テンプレートに渡されるモデルの型を宣言する |
+|              | @section         | セクションに埋め込むコンテンツを追加する   |
+|              | @functions       |                                            |
+| クラス       | @using           |                                            |
+|              | @namespace       |                                            |
+|              | @implements      |                                            |
+| タグヘルパー | @addTagHelper    |                                            |
+|              | @removeTagHelper |                                            |
+|              | @tabHelperPrefix |                                            |
+| その他       | @inject          |                                            |
+|              | @attribute       |                                            |
+
+
 
 
 --- 
