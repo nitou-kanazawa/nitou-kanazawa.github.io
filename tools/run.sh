@@ -2,6 +2,7 @@
 #
 # Run jekyll serve and then launch the site
 
+# 初期変数定義
 prod=false
 command="bundle exec jekyll s -l"
 host="127.0.0.1"
@@ -17,6 +18,7 @@ help() {
   echo "     -h, --help           Print this help information."
 }
 
+# 引数のパース処理
 while (($#)); do
   opt="$1"
   case $opt in
@@ -40,15 +42,18 @@ while (($#)); do
   esac
 done
 
+# コマンド構築
 command="$command -H $host"
 
 if $prod; then
   command="JEKYLL_ENV=production $command"
 fi
 
+# Docker対応
 if [ -e /proc/1/cgroup ] && grep -q docker /proc/1/cgroup; then
   command="$command --force_polling"
 fi
 
+# コマンド実行
 echo -e "\n> $command\n"
 eval "$command"
