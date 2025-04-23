@@ -104,11 +104,7 @@ block-beta
     f ["フィルター"]
     e ["etc."]
   end
-  
 ```
-
-
-
 
 
 ---
@@ -269,7 +265,7 @@ public class HelloController : Controller{
 ---
 ## 3. Scaffolding機能
 
-- [ ] Scaffolding機能の実行
+- [x] Scaffolding機能の実行
 
 
 #### Scaffoldingとは
@@ -353,6 +349,20 @@ public async Task<IActionResult> Edit(int? id) {
 ## 4. ビュー開発
 
 - [ ] Razorの基本構文
+
+
+| 分類   | 命令                   | 概要                       |
+| ------ | ---------------------- | -------------------------- |
+| 分岐   | @if / else if / else   | キストを出力               |
+|        | @switch                | キストを出力               |
+| ループ | @for                   | 指定された回数だけ繰り返し |
+|        | @foreach               | リストの内容を繰り返し     |
+|        | @while                 | 条件式がtrueの間，繰り返し |
+|        | @do...while            | 条件式がtrueの間，繰り返し |
+| その他 | @using                 | オブジェクトの自動破棄     |
+|        | @try...catch...finally | 例外処理                   |
+|        | @lock                  | 処理のロック               |
+
 
 --- 
 ## 5. モデル開発
