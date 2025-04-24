@@ -16,6 +16,7 @@ tags:
 
 `GitHub Actions`は`ワークフロー(Workflow)`という単位でタスクを自動化する．`ワークフロー`は「いつ」「どこで」「どのような」処理を実行するかを定義する
 
+---
 ## GitHub Actions をはじめる
 
 `GitHub Actions`はリポジトリへ`ワークフローファイル(Workflow file)`と呼ばれる YAML ファイルを追加するだけで実行することができる．
