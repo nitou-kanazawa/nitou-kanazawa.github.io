@@ -1,0 +1,99 @@
+---
+title: PlantUMLでディレクトリ構成図を書く
+categories: [ Tool ]
+tags:
+  - PlantUML
+---
+
+PlantUML にはサブプロジェクトとして [**`Salt`**][Salt ドキュメント] というワイヤフレームGUI設計ツールが提供されている．これを利用すると**ディレクトリ構成図**を作成することもできる．
+
+
+---
+## Salt
+
+
+```
+@startsalt
+
+@endsalt
+```
+
+
+---
+## 記入例
+
+木構造を作るには `{T ...}` で囲む必要がある．また階層は `+` 個数であらわる
+
+```
+salt
+{
+  { T
+    + Root
+      ++ Child 1
+        +++ File
+      ++ Child 2
+      ++ Child 3
+  }
+}
+```
+
+```puml
+scale 1.3
+salt
+{
+  { T
+    + Root
+      ++ Child 1
+        +++ File
+      ++ Child 2
+      ++ Child 3
+  }  
+}
+```
+
+####　見た目の装飾
+
+Salt は， `<b>` や `<color>` などのタグで装飾することも可能．[OpenIconic](https://plantuml.com/ja/openiconic) を使ってアイコンを表示することもできる．
+
+```puml
+scale 1.2
+salt
+{
+    {T
+        + <color:blue><&folder>Networking
+            ++ <&folder>Editor
+                +++ EditorSMBClient.cs | Unity Editor向け実装
+            ++ <&folder>iOS
+                +++ iOSSMBClient.cs     | iOS向け実装
+                +++ NativeCaller.cs     | ネイティブプラグインラッパー
+            
+            ++ <b>SMBService.cs         | <b>サービス本体
+            ++ SMBConnectionInfo.cs     | 接続情報構造体
+            ++ SMBException.cs          | 例外定義
+    }
+}
+```
+
+
+#### アイコン
+
+
+
+---
+## その他
+
+ちなみに`ASCIIダイアグラム`で十分ならば，以下のようなブラウザで動作するツールも公開されている．
+
+[tree.nathanfriend.io](https://tree.nathanfriend.com/)
+[ドキュメント](https://gitlab.com/nfriend/tree-online#what-is-this)
+
+---
+## 参考資料
+- qiita: [PlantUMLを使用してテキストでディレクトリ構成図を描く](https://qiita.com/rye_442/items/4766e0b44ce671af9010)
+- qiita: [ディレクトリ構造をパワポやテキストで書くの辞めませんか？](https://qiita.com/yuitomo/items/6534057e7e1e6f325e7c)
+- hatena: [PlantUML で、ファイル構成を示すツリー図を書く](https://oboe2uran.hatenablog.com/entry/2025/02/13/003000)
+
+
+
+<!-- Link -->
+[Salt ドキュメント]: https://plantuml.com/ja-dark/salt
