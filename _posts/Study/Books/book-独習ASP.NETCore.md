@@ -8,7 +8,9 @@ tags:
 mermaid: true
 ---
 
-
+> <img src="https://www.seshop.com/static/images/product/26338/L.png" alt="書籍表紙" width="300">
+> 
+> 出典：[翔泳社](https://www.shoeisha.co.jp/book/detail/9784798180557)
 
 ---
 ## 1. イントロダクション
