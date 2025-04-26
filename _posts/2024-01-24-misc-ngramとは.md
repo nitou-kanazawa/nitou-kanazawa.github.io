@@ -5,7 +5,7 @@ categories:
 tags:
   - 自然言語処理
   - n-gram
-date: 2024-01-24T05:54:13.000Z
+date: 2024-01-24
 ---
 
 ## 概要
