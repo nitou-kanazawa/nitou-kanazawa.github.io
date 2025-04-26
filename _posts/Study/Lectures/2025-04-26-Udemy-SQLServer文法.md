@@ -26,7 +26,7 @@ mermaid: true
 
 [ダウンロードサイト](https://www.microsoft.com/ja-jp/sql-server/sql-server-downloads)から
 
-<img src="/assets/img/SQLServer\SqlServer2022ダウンロード.png" alt="SqlServer ダウンロード" width="500">
+<img src="/assets/img/SQLServer/SqlServer2022ダウンロード.png" alt="SqlServer ダウンロード" width="500">
 
 
 --- 
