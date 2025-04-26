@@ -1,9 +1,12 @@
 ---
 title: 講座「Udemy SQLServer文法1」
-categories: [ 学習記録, 講義 ]
+categories:
+  - 学習記録
+  - 講義
 tags:
   - DB
 mermaid: true
+date: 2025-04-26T05:56:48.413Z
 ---
 
 [Udemy](https://www.udemy.com/course/anderson_sqlinit/?couponCode=KEEPLEARNING)
