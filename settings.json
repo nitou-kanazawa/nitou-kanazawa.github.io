@@ -1,2 +1,10 @@
 {
+  // // まず機能を有効化
+  // "workbench.editor.customLabels.enabled": true,
+
+  // // _posts 以下の .md にだけ適用
+  // "workbench.editor.customLabels.patterns": {
+  //   // "**/_posts/**/*.md": "${dirname}/${filename}"
+  //   "**/_posts/**/*.md": "${dirname}/${filename}"
+  // }
 }
