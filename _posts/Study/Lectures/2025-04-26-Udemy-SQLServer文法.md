@@ -26,7 +26,8 @@ mermaid: true
 
 [ダウンロードサイト](https://www.microsoft.com/ja-jp/sql-server/sql-server-downloads)から
 
-![alt text](assets\img\SQLServer\SqlServer2022ダウンロード.png)
+<img src="/assets/img/SQLServer\SqlServer2022ダウンロード.png" alt="SqlServer ダウンロード" width="500">
+
 
 --- 
 ## 2. テーブルの作成

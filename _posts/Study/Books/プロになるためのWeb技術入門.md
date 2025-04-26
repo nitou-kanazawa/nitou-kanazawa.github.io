@@ -7,9 +7,9 @@ tags:
   - HTTP
 ---
 
-> <img src="" alt="書籍表紙" width="300">
+> <img src="https://image.gihyo.co.jp/assets/images/cover/2024/9784297145712.jpg" alt="書籍表紙" width="300">
 >
-> 出典：[]
+> 出典：[技術評論社](https://gihyo.jp/book/2024/978-4-297-14571-2)
 
 普段の開発ではクライアント側しか扱ったことがないことや，Web全般の知識が欠けていることから，Webの全体像を捉えられることを期待してこちらの書籍を購入した．
 
