@@ -6,6 +6,7 @@ categories:
 tags:
   - VSCode
 date: 2025-04-26
+draft: true
 ---
 
 
@@ -20,6 +21,9 @@ VSCodeでマークダウン記事を編集する時に便利な拡張機能に�
 ## Front Matter CMS
 
 <img src="https://eliostruyf.gallerycdn.vsassets.io/extensions/eliostruyf/vscode-front-matter/10.8.0/1740654769281/Microsoft.VisualStudio.Services.Icons.Default">
+
+
+- タクソノミー（カタゴリ・タグ等）をGUIで管理できる．
 
 
 #### 設定ファイル
