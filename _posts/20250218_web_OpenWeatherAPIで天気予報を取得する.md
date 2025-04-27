@@ -4,7 +4,6 @@ categories: [ Web ]
 tags:
   - WebAPI
   - C#
-id: a2e89bb6-4427-41ce-94d2-63ed45ba3eab
 ---
 
 ## 概要
