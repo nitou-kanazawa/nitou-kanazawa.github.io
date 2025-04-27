@@ -1,6 +1,7 @@
 ---
-title: ZigSimでスマホをコントローラにする
+title: "ZigSimでスマホをコントローラにする"
 description: ""
+date: 2025-04-27
 categories:
   - Misc
 tags:
