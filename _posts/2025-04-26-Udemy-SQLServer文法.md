@@ -8,7 +8,7 @@ tags:
   - SQL
   - SQLServer
 mermaid: true
-draft: false
+draft: true
 ---
 
 [Udemy](https://www.udemy.com/course/anderson_sqlinit/?couponCode=KEEPLEARNING)
@@ -46,6 +46,9 @@ SSMSダウンロード_日本語
 
 --- 
 ## 3. 基本的なSQL
+
+- `select`
+- `where`
 
 --- 
 ## 4. テーブル設計と正規化
@@ -88,11 +91,13 @@ erDiagram
 --- 
 ## 5. 結合＆並び替え
 
-
 `Order`と`OrderItems`の結合
+
 ```sql
 select * from Orders A
 inner join OrderItems B
 on a.OrderId = b.OrderId
 ```
+
+`inner join` `left outter join`
 
