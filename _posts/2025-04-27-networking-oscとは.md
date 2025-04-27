@@ -108,6 +108,9 @@ OSCは `UDP` / `TCP` / `シリアル` など様々な輸送層で動作する．
 Unity向けのOSC実装．
 
 
+#### 参考記事
+- 凹みTips: [Unity 向けの OSC 実装を作ってみた](https://tips.hecomi.com/entry/2017/08/20/193823)
+
 
 <!-- Link -->
 [CNMAT OSC 公式]: https://opensoundcontrol.stanford.edu/index.html
