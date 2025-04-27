@@ -8,7 +8,6 @@ tags:
   - SQL
   - SQLServer
 mermaid: true
-draft: true
 ---
 
 [Udemy](https://www.udemy.com/course/anderson_sqlinit/?couponCode=KEEPLEARNING)

@@ -10,7 +10,6 @@ tags:
   - VIVEトラッカー
 preview: ""
 mermaid: false
-draft: true
 ---
 
 XでUnityちゃんライブステージを複数のモニタに投影している動画がまわってきて，`Portalgraph`について知った．
