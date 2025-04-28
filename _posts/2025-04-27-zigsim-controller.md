@@ -1,6 +1,5 @@
 ---
-title: "ZigSimでスマホをコントローラにする"
-description: ""
+title: ZigSimでスマホをコントローラにする
 date: 2025-04-27
 categories:
   - Misc
@@ -29,6 +28,24 @@ mermaid: false
 - 通信は`UDP`または`TCP`で行う．（基本は`UDP`） 
 - センサデータは`JSON`形式で送られる．
 
+
+
+--- 
+## 扱えるデータ
+
+
+#### Accel
+
+
+
+#### Gravity
+
+
+
+#### Gyro（回転速度）
+
+
+#### 
 
 
 --- 

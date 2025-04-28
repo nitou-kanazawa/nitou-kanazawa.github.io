@@ -1,5 +1,6 @@
 ﻿---
 title: OpenWeatherAPIで天気予報を取得する
+date: 2025-02-18
 categories: [ Web ]
 tags:
   - WebAPI
