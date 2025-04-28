@@ -33,6 +33,23 @@ mermaid: true
 ## 1. ネットワーク基礎知識
 
 
+#### OSI参照モデル
+
+```mermaid
+block-beta
+  columns 3
+
+  application ["7 アプリケーション層"]  :3
+  presentation["6 プレゼンテーション層"] :3
+  session      ["5 セッション層"]        :3
+  transport    ["4 トランスポート層"]    :3
+  network      ["3 ネットワーク層"]      :3
+  datalink     ["2 データリンク層"]       :3
+  physical     ["1 物理層"]              :3
+```
+
+
+
 ---
 ## 2. TCP/IP基礎知識
 
@@ -66,15 +83,3 @@ mermaid: true
  
 
 
-```mermaid
-block-beta
-  columns 3
-  
-  application :3
-  presentation :3
-  session :3
-  transport :3
-  network :3
-  datalink :3
-  hardware :3
-```

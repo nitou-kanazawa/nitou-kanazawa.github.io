@@ -1,5 +1,5 @@
 ---
-title: Mermaidでフローチャートを作成する
+title: Mermaidでブロック図を作成する
 categories: [ Misc ]
 tags:
   - Mermaid
@@ -160,6 +160,6 @@ block-beta
 
 ## 
 
-
+---
 ## 参考
 - hatena: [Mermaidでブロック図を書いてみる（作成手順も記載）](https://miya-moto-memo.hatenablog.com/entry/2024/06/28/183000)
