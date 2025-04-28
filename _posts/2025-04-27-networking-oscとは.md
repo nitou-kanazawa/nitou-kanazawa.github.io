@@ -75,7 +75,7 @@ OSCは `UDP` / `TCP` / `シリアル` など様々な輸送層で動作する．
 - qiita: [OSCとは？OSC通信についてまとめてみた](https://qiita.com/generosity_honda/items/904aaeb382f6496ab920)
 - qiita: [【OSC何も分からん人向け】OSCでVRChatを操作してみよう！](https://qiita.com/mofurune/items/eab78dee10ace5735a9a)
 - youtube: [OSCって何？UnityビジュアルスクリプティングでOSC通信してみよう！](https://www.youtube.com/watch?v=aGwpV28EF94)
-
+- zenn: [VRChatがOSCに対応したので、まずはNode.jsでアバターをジャンプさせてみた](https://zenn.dev/tkyko13/articles/0c16ea15530e6e)
 
 
 
