@@ -6,4 +6,5 @@
   //   // "**/_posts/**/*.md": "${dirname}/${filename}"
   //   "**/_posts/**/*.md": "${dirname}/${filename}"
   // }
+  "editor.wordWrap": "off"
 }

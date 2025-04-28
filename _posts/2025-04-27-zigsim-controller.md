@@ -6,9 +6,7 @@ categories:
   - Misc
 tags:
   - ZigSim
-preview: ""
 mermaid: false
-draft: true
 ---
 
 
