@@ -23,7 +23,6 @@ Mermaidでは以下の図を作成できる。
 - ユーザジャーニー
 - パイチャート
 - gitグラフ
-  
 - Flowchart
 - Pie chart diagrams
 - Quadrant Chart

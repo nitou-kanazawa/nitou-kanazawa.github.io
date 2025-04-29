@@ -1,6 +1,5 @@
 ---
 title: 書籍「マスタリングTCP/IP 入門編 第６版」
-description: ""
 date: 2024-12-02
 categories:
   - 学習記録

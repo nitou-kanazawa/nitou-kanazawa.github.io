@@ -1,6 +1,7 @@
 ---
 title: HTTP Cookie
-category: Web
+categories:
+  - Web
 tags:
   - HTTP
 ---
