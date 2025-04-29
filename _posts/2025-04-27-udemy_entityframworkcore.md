@@ -1,7 +1,7 @@
 ---
 title: 講座「Udemy EntityFramworkCore【C#】」
 description: ""
-date: 2025-04-27
+date: 2025-04-27T15:00:00.000Z
 categories:
   - Database
 tags:

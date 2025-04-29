@@ -1,6 +1,6 @@
 ---
 title: 講座「Udemy SQLServer文法1」
-date: 2025-04-26
+date: 2025-04-26T15:00:00.000Z
 categories:
   - 学習記録
   - 講義

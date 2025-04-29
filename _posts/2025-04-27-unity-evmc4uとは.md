@@ -1,7 +1,7 @@
 ---
 title: EVMC4Uとは
 description: ""
-date: 2025-04-27
+date: 2025-04-27T15:00:00.000Z
 categories:
   - Unity
 tags:

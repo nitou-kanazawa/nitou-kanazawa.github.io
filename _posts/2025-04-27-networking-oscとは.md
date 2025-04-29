@@ -1,7 +1,7 @@
 ---
 title: OSCとは
 description: Open Sound Control (OSC) は、ネットワーク経由でリアルタイムにマルチメディア機器を制御するための軽量なメッセージ指向プロトコル．
-date: 2025-04-27
+date: 2025-04-27T15:00:00.000Z
 categories:
   - Networking
 tags:

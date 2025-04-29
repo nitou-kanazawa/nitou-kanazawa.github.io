@@ -1,7 +1,7 @@
 ---
 title: Mermaidでガントチャート図を書く
 description: ""
-date: 2025-04-28
+date: 2025-04-28T15:00:00.000Z
 categories: [Misc]
 tags:
   - Mermaid
