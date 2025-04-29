@@ -1,7 +1,7 @@
 ---
 title: Mermaidでアーキテクチャ図を書く
 description: "Mermaidでアーキテクチャ図を書く方法に関するメモ"
-date: 2025-04-28T15:00:00.000Z
+date: 2025-04-28
 categories:
   - Misc
 tags:

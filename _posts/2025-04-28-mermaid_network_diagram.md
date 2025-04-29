@@ -1,6 +1,6 @@
 ---
 title: Mermaidでネットワーク図を書く
-date: 2025-04-27T15:00:00.000Z
+date: 2025-04-27
 categories:
   - Misc
 tags:
