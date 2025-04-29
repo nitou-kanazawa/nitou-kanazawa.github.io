@@ -2,7 +2,8 @@
 title: Chain of Responsibility パターン
 description: >-
   Chain of Responsibility（責任の連鎖）は，振る舞いに関するデザインパターンの１つ．
-categories: [設計]
+categories: 
+  - 設計
 tags:
   - デザインパターン
   - GoF
