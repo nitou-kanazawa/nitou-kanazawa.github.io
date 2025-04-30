@@ -1,6 +1,9 @@
 ---
 title: VSCodeでNET開発環境を構築する
-categories: [ Tool, VSCode]
+date: 2025-03-08
+categories:
+  - Tool
+  - VSCode
 tags:
   - VSCode
   - .NET
