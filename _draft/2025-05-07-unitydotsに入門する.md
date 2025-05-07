@@ -1,11 +1,11 @@
 ---
 title: UnityDotsに入門する
 description: ""
-date: 2025-05-07T05:16:37.556Z
-categories: []
-tags: []
-preview: ""
-mermaid: false
+date: 2025-05-07
+categories: 
+  - Unity
+tags: 
+  - Unity
 ---
 
 
