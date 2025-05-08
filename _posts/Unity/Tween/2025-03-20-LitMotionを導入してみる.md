@@ -1,5 +1,6 @@
 ---
 title: LiMotionを導入してみる
+date: 2025-03-20
 categories: [Unity]
 tags:
   - Unity

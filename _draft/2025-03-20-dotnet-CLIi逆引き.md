@@ -1,6 +1,5 @@
 ---
 title: .NET CLI 逆引き
-description: ""
 date: 2025-03-08
 categories:
   - Tool
@@ -54,15 +53,6 @@ mermaid: false
 ---
 ## 参考資料
 
-- [.NET CLI Documentation - Microsoft Learn](https://learn.microsoft.com/ja-jp/dotnet/core/tools/)
-- [dotnet CLI の使い方まとめ - Zenn](https://zenn.dev/)
+- Microsoft Docs: [.NET CLI Documentation](https://learn.microsoft.com/ja-jp/dotnet/core/tools/)
+- zenn: [dotnet CLI の使い方まとめ](https://zenn.dev/)
 
-
-
-
-
-
-
-
----
-## 参考資料
