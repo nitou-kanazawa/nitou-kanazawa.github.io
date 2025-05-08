@@ -9,7 +9,8 @@ id: dfe102d6-0d86-4205-8f32-2388dee20941
 
 普段，なんとなくで使用しているHttpClient関連について，学びなおそうと思う．
 
-****
+
+---
 ## HTTP
 
 #### 概要
@@ -32,7 +33,8 @@ id: dfe102d6-0d86-4205-8f32-2388dee20941
 
 #### Httpの動作
 
-***
+
+---
 ## HttpClient（C#）
 
 #### 概要
@@ -90,11 +92,11 @@ using (var client = new HttpClient()) {
 
 
 
-****
+---
 ## 参考資料
-- [qiita: System.Net.Http.HttpClientを使ってWeb APIとHTTP通信する方法](https://qiita.com/iwasiman/items/40775d66e2ad5a9613e3)
-- [qiita: C# 今更ですが、HttpClientを使う](https://qiita.com/rawr/items/f78a3830d894042f891b)
-- [zenn: HttpClientでAPIリクエストを送信する：StringContentとFormUrlEncodedContentの使い分け](https://zenn.dev/shimiyu/articles/2ba819632490a0)
+- qiita: [System.Net.Http.HttpClientを使ってWeb APIとHTTP通信する方法](https://qiita.com/iwasiman/items/40775d66e2ad5a9613e3)
+- qiita: [C# 今更ですが、HttpClientを使う](https://qiita.com/rawr/items/f78a3830d894042f891b)
+- zenn: [HttpClientでAPIリクエストを送信する：StringContentとFormUrlEncodedContentの使い分け](https://zenn.dev/shimiyu/articles/2ba819632490a0)
 
-- [qiita: HttpClientをusingで囲わないでください](https://qiita.com/superriver/items/91781bca04a76aec7dc0)
+- qiita: [HttpClientをusingで囲わないでください](https://qiita.com/superriver/items/91781bca04a76aec7dc0)
 

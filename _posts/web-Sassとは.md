@@ -60,7 +60,7 @@ nav {
 
 ---
 ## 参考資料
-- [qiita: Sassで最初に覚えること4選](https://qiita.com/f-ono/items/3e947c32dc0a35d0f77d)
+- qiita: [Sassで最初に覚えること4選](https://qiita.com/f-ono/items/3e947c32dc0a35d0f77d)
 
 
 <!-- リンク -->

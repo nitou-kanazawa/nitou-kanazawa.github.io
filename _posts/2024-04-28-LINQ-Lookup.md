@@ -2,6 +2,7 @@
 title: LINQ | Lookup<TKey,TElement>
 description: >-
   `System.Linq`名前空間に所属する`Lookup<TKey,TElement>`はキーを値または値のコレクションにマップする辞書のようなデータ構造をもつ．
+date: 2024-04-28
 categories: [C#]
 tags:
   - C#

@@ -1,14 +1,16 @@
 ---
 title: IDisposable関連の便利なクラス
-categories: [Unity]
+date: 2024-08-07
+categories:
+  - Unity
 tags:
   - Unity
   - UniRx
 ---
 
-`UniRx` は `IDisposable` 関連で便利なクラスがいくつか実装されている．
+`UniRx` には `IDisposable` 関連で便利なクラスがいくつか実装されている．
 
-`CompositeDisposable`，`SerialDisposable`，`CancellationDisposable` あたりは挙動がシンプルなので，導入しやすいと思う．これらを用いることで、生の `IDisposable` を直接扱うよりもコードの意図が明確になり、リソース管理の安全性も向上します．
+適した場面では，生の `IDisposable` を直接扱う代わりにこれらを用いることで、コードの意図が明確になることや、リソース管理の安全性も向上するなどのメリットがある．`CompositeDisposable`，`SerialDisposable`，`CancellationDisposable` あたりは挙動がシンプルなため，導入のハードルも低い．
 
 
 ---
@@ -16,7 +18,6 @@ tags:
 1. `CompositeDisposable`
 2. `CancellationDisposable`
 3. `SerialDisposable`
-
 
 
 ちなみに，UniRxの購読処理で返される `Disposable`オブジェクトは，複数回Dispose()を呼んでも例外は投げない実装になっているようだ．
@@ -56,6 +57,19 @@ observable5.Subscribe(...).AddTo(disposables);  // Dispose!
 
 `CompositeDisposable` は `ICollection<IDisposable>` を実装しており，内部に `List<IDisposable>` を保持している．
 
+
+---
+## 2. StableCompositeDisposable
+
+`CompositeDisposable` の固定長版．以下のファクトリメソッドで生成する．
+
+```cs
+StableCompositeDisposable.Create(d1, d2);
+StableCompositeDisposable.Create(d1, d2, d3);
+ :
+StableCompositeDisposable.Create(d1, d2, d3, d4, d5, d6, d7, d8);
+StableCompositeDisposable.Create(params disposables);
+```
 
 
 ---
@@ -152,5 +166,7 @@ void CancelTask() {
 
 ---
 ## 参考資料
-- Cluster TechBlog: [UniRxのディープなつまずきの紹介](https://tech-blog.cluster.mu/entry/2022/02/21/174529)
 - qiita: [UniRx入門 その2 - メッセージの種類/ストリームの寿命](https://qiita.com/toRisouP/items/851087b4c990d87641e6)
+- qiita: [UniRx入門　~ データバインディングとUnityイベント関数の購読 ~ ](https://qiita.com/su10/items/6d7fd792d4b553454a4f)
+- Cluster TechBlog: [UniRxのディープなつまずきの紹介](https://tech-blog.cluster.mu/entry/2022/02/21/174529)
+- はなちるのマイート: [【UniRx】IDisposableをまとめてDisposeするためのCompositeDisposableクラスを利用する](https://www.hanachiru-blog.com/entry/2021/05/06/120000)
