@@ -39,14 +39,14 @@
           "type": "image"
         },
         {
-          "title": "Is in draft",
-          "name": "draft",
-          "type": "draft"
-        },
-        {
           "title": "mermaid",
           "name": "mermaid",
           "type": "boolean"
+        },
+        {
+          "title": "draft",
+          "name": "draft",
+          "type": "draft"
         }
       ]
     }

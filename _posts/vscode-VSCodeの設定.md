@@ -1,6 +1,7 @@
 ---
 title: VSCodeの設定
-categories: [ Tool, VSCode ]
+categories: 
+  - Tool
 tags:
   - VSCode
 ---

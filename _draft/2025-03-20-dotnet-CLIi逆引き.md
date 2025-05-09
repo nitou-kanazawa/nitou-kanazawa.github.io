@@ -3,7 +3,6 @@ title: .NET CLI 逆引き
 date: 2025-03-08
 categories:
   - Tool
-  - VSCode
 tags:
   - .NET
   - CLI

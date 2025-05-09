@@ -8,6 +8,8 @@ id: 0a7062ebbc9787f2d9c8
 
 Swiftの基本文法に関するメモ．初学者の躓きどころは`Optional`と`Closures`だと耳にしたので、その辺を押さえておきたい．
 
+
+---
 ## 項目
 - 変数と定数
 - Optional
@@ -66,7 +68,7 @@ if let value = optionalValue {
 }
 ```
 
-**参考**
+#### 参考
 - [Apple: ドキュメント](https://developer.apple.com/documentation/swift/optional)
 - [zenn: オプショナル型の意味と使い方をおさらい](https://zenn.dev/z_ypi/articles/7a3778ffdf4d9f)
 - [_: SwiftでNullの判定をするための10選](https://jp-seemore.com/app/15407/)
@@ -248,6 +250,5 @@ extension SomeStructure: ProtocolB {
 
 
 ## 参考資料
-
 - [Mixi: iOS研修](https://www.youtube.com/watch?v=-CIJkjv8yJA&t=4300s)
 - [](https://github.com/mixigroup/ios-swiftui-training/tree/main)

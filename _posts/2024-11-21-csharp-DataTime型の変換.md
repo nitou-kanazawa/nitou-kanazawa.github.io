@@ -1,9 +1,9 @@
 ﻿---
 title: DataTime型の変換
+date: 2024-11-21
 category: C#
 tags:
   - C#
-id: ec0dda1c-2ffe-46e7-819e-0d5af6bb9dfb
 ---
 
 ## DateTime型 → String型
@@ -88,6 +88,8 @@ Info.DateTimeFormat.Calendar = new System.Globalization.JapaneseCalendar();
 sDate = dt.ToString("ggyy年M月d日"); // → 令和4年8月27日
 ```
 
+
+---
 ## DateTime型 → 数値型（int, long）
 ```cs
 DateTime dt = DateTime.Now; // → 2022/08/27 16:04:32
@@ -99,7 +101,7 @@ long lDate = 0;
 lDate = long.Parse(dt.ToString("yyyyMMddHHmmss")); // → 20220817160432
 ```
 
-
+---
 ## int型 → DateTime型
 
 ```cs
@@ -123,10 +125,9 @@ DateTime dDate = new DateTime(iYear, iMonth, iDay); // 2022/08/31
 
 
 
-
+---
 ## 参考資料
-
-- [MS: DateTime 構造体](https://learn.microsoft.com/ja-jp/dotnet/api/system.datetime?view=net-8.0)
-- [qiita: DateTime型の変換　まとめ](https://qiita.com/t_hane/items/c418e5b531156afeb2f9)
-- [_: DateTimeの使い方とフォーマットの種類を紹介！](https://marunaka-blog.com/csharp-datetime/)
-- [_: DateTime.ToString() で日付の書式設定をするには？](https://marunaka-blog.com/csharp-datetime-tostring/4514/)
+- Microsoft Docs: [DateTime 構造体](https://learn.microsoft.com/ja-jp/dotnet/api/system.datetime?view=net-8.0)
+- qiita: [DateTime型の変換　まとめ](https://qiita.com/t_hane/items/c418e5b531156afeb2f9)
+- _: [DateTimeの使い方とフォーマットの種類を紹介！](https://marunaka-blog.com/csharp-datetime/)
+- _: [DateTime.ToString() で日付の書式設定をするには？](https://marunaka-blog.com/csharp-datetime-tostring/4514/)

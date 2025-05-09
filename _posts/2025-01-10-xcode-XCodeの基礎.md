@@ -1,17 +1,16 @@
 ﻿---
 title: XCodeの基礎
-categories: [ Tool, VSCode ]
+categories: 
+  - Tool
 tags:
   - XCode
 ---
 
-## 概要
-
 XCodeは、Apple製品向けのアプリ開発に使用される統合開発環境（IDE）．
 iOS、macOS、watchOS、tvOSアプリの作成が可能で、SwiftやObjective-Cでコードを作成する．
 
----
 
+---
 ## 用語
 
 ### プロジェクト
@@ -34,8 +33,8 @@ iOS、macOS、watchOS、tvOSアプリの作成が可能で、SwiftやObjective-C
 - ビルドや実行、テスト、アーカイブの設定をまとめたもの．
 - 複数のスキームを用意することで、開発用、テスト用、本番用などの動作を切り替え可能．
 
----
 
+---
 ## エディタ
 
 ### エディタエリア
@@ -63,8 +62,8 @@ iOS、macOS、watchOS、tvOSアプリの作成が可能で、SwiftやObjective-C
 - iOS、watchOS、tvOSデバイスを仮想的に再現するツール。
 - アプリの動作確認やデバッグに使用。
 
----
 
+---
 ## デバッグ & テスト
 
 ### デバッグエリア
@@ -82,8 +81,8 @@ iOS、macOS、watchOS、tvOSアプリの作成が可能で、SwiftやObjective-C
 - テスト用のアプリを公開することができるサービス。
 - `Apple Developer Program`に登録している必要がある。
 
----
 
+---
 ## その他
 
 ### アセットカタログ
@@ -96,8 +95,8 @@ iOS、macOS、watchOS、tvOSアプリの作成が可能で、SwiftやObjective-C
 - プロジェクトやターゲットごとのビルドオプションを管理する。
 - Swiftのバージョン、最適化設定、署名情報などを設定。
 
----
 
+---
 ## 参考資料
 
 - [Apple公式ドキュメント](https://developer.apple.com/documentation/xcode)

@@ -1,11 +1,11 @@
 ---
 title: N-gramとは
+date: 2024-01-24
 categories:
   - Misc
 tags:
   - 自然言語処理
   - n-gram
-date: 2024-01-24
 ---
 
 
@@ -73,8 +73,8 @@ date: 2024-01-24
 
 ---
 ## 参考資料
-- [qiita: N-gramの作り方](https://qiita.com/kazmaw/items/4df328cba6429ec210fb)
-- [qiita: 3. Pythonによる自然言語処理　1-1. 単語N-gram](https://qiita.com/y_itoh/items/82222af50bf1f80255eb)
+- qiita: [N-gramの作り方](https://qiita.com/kazmaw/items/4df328cba6429ec210fb)
+- qiita: [3. Pythonによる自然言語処理　1-1. 単語N-gram](https://qiita.com/y_itoh/items/82222af50bf1f80255eb)
 
 
 <!-- リンク -->

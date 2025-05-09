@@ -1,15 +1,15 @@
 ---
 title: 「A Tour of Go」でGo言語に入門する
+date: 2025-02-28
 category: Go
 tags:
   - Go
 ---
 
-
 [A Tour of Go]は
 
-<!-- more -->
 
+---
 ## Go言語について
 
 
@@ -26,6 +26,7 @@ func main(){
 }
 ```
 
+---
 ## GO言語の特徴
 
 #### オブジェクト志向ではない
@@ -39,7 +40,7 @@ func main(){
 
 
 
-
+---
 ## Basics
 
 #### Packages
@@ -111,16 +112,7 @@ Goで型がこのように宣言される理由は，記事[「Go's declaration 
 
 #### Variables
 
-#### 
-
-#### 
-
-#### 
-
-## 
 
 
-## 
-
-
+---
 ## 参考資料

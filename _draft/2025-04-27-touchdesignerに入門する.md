@@ -1,13 +1,16 @@
 ---
 title: Touchdesignerに入門する
-description: ""
-date: 2025-04-27T09:01:08.932Z
-categories: []
-tags: []
-preview: ""
-mermaid: false
+date: 2025-04-27
+categories: 
+  - Tool
+tags: 
+  - Touchdesigner
 ---
 
+
+
+---
+## Touchdesignerとは
 
 
 ---

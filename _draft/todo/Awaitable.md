@@ -10,7 +10,7 @@ tags:
 
 
 
-
+---
 ## Awaitable パターン
 
 ```cs
@@ -30,6 +30,7 @@ await可能な型は，
 ※ Unity6（2023）から追加された`Awaitable`クラスはこのAwaitableパターンに則って，async/await
 
 
+---
 ## 参考記事
 
 - 未確認飛行C: [非同期メソッドの内部実装]
