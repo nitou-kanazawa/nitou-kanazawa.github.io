@@ -129,23 +129,12 @@ IPアドレスは「ネットワーク部」と「ホスト部」で構成され
 #### サブネットマスク
 
 
-
-
-
-
-
-
-
 #### IPv4 ヘッダー
-
 
 ```mermaid
 block-beta
-
-
+a
 ```
-
-
 
 
 ---
@@ -155,7 +144,6 @@ block-beta
 ---
 ## 6. TCPとUDP
 
-
 #### TCP
 
 
@@ -164,23 +152,23 @@ block-beta
 title: "TCP Packet"
 ---
 packet-beta
-0-15: "Source Port"
-16-31: "Destination Port"
-32-63: "Sequence Number"
-64-95: "Acknowledgment Number"
-96-99: "Data Offset"
-100-105: "Reserved"
-106: "URG"
-107: "ACK"
-108: "PSH"
-109: "RST"
-110: "SYN"
-111: "FIN"
-112-127: "Window"
-128-143: "Checksum"
-144-159: "Urgent Pointer"
-160-191: "(Options and Padding)"
-192-255: "Data (variable length)"
+  0-15: "Source Port"
+  16-31: "Destination Port"
+  32-63: "Sequence Number"
+  64-95: "Acknowledgment Number"
+  96-99: "Data Offset"
+  100-105: "Reserved"
+  106: "URG"
+  107: "ACK"
+  108: "PSH"
+  109: "RST"
+  110: "SYN"
+  111: "FIN"
+  112-127: "Window"
+  128-143: "Checksum"
+  144-159: "Urgent Pointer"
+  160-191: "(Options and Padding)"
+  192-255: "Data (variable length)"
 ```
 
 
@@ -191,17 +179,18 @@ packet-beta
 title: "UDP Packet"
 ---
 packet-beta
-0-15: "Source Port"
-16-31: "Destination Port"
-32-47: "Length"
-48-63: "Checksum"
-64-95: "Data (variable length)"
+  0-15: "Source Port"
+  16-31: "Destination Port"
+  32-47: "Length"
+  48-63: "Checksum"
+  64-95: "Data (variable length)"
 ```
 
 
 ---
 ## 7. ルーティングプロトコル
 
+※現時点では内容を十分に理解できなかったため、ざっと読み流した。
 
 ---
 ## 8. アプリケーションプロトコル
@@ -209,6 +198,3 @@ packet-beta
 
 ---
 ## 9. セキュリティ
- 
-
-
